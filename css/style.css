@@ -600,6 +600,19 @@ template {
   max-width: 751px;
 }
 
+.reference__recommendation-button {
+  padding: 25px 283px 27px 287px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: rgba(21, 101, 216, 0.1);
+  color: #1565D8;
+  border-radius: 8px;
+  border: none;
+}
+
 .reference__title {
   font-style: normal;
   font-weight: bold;
@@ -629,7 +642,7 @@ template {
   border-radius: 8px;
   padding: 11px 38px 11px 11px;
   width: 358px;
-  min-width: 260px;
+  min-height: 260px;
   margin-bottom: 32px;
 }
 
@@ -654,6 +667,7 @@ template {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
+  max-width: 101px;
 }
 
 .reference__image {
@@ -696,5 +710,32 @@ template {
   letter-spacing: 0.2px;
   color: #1565D8;
   margin-bottom: 24px;
+}
+
+.reference__top-blocks {
+  padding: 24px 24px 26px 24px;
+  width: 360px;
+  background-color: rgba(179, 186, 197, 0.1);
+  border-radius: 8px;
+}
+
+.reference__top-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reference__top-image {
+  width: 119.33px;
+  height: 177.5px;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 26px;
+  margin-bottom: 36px;
+}
+
+.reference__top-button {
+  padding: 25px 124px 24px 124px;
 }
 /*# sourceMappingURL=style.css.map */
