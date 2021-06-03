@@ -442,4 +442,22 @@ template {
     transition: 0.3s;
   }
 }
+
+.main {
+  padding: 69px 0 50px 0;
+}
+
+.main__container {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
