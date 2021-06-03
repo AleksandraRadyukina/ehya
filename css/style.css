@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 a {
@@ -14,6 +14,10 @@ a {
 
 button {
   cursor: pointer;
+}
+
+h3 {
+  margin: 0;
 }
 
 .container {
@@ -573,5 +577,124 @@ template {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+}
+
+.reference {
+  padding-top: 50px;
+  padding-bottom: 79px;
+}
+
+.reference__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 147px;
+  margin-right: 153px;
+  max-width: 1143px;
+}
+
+.reference__recommendation {
+  max-width: 751px;
+}
+
+.reference__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-bottom: 30px;
+}
+
+.reference__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reference__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  padding: 11px 38px 11px 11px;
+  width: 358px;
+  min-width: 260px;
+  margin-bottom: 32px;
+}
+
+.reference__block-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reference__block-button {
+  padding: 7px 20px;
+  border-radius: 2000px;
+  border: none;
+  background-color: #183B56;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.reference__image {
+  width: 160px;
+  height: 238px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
+}
+
+.reference__name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.reference__book-category {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+  margin-bottom: 24px;
+}
+
+.reference__price {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1565D8;
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=style.css.map */
