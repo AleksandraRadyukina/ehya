@@ -557,7 +557,7 @@ template {
 
 .book__image {
   padding: 103px 105px 60px 105px;
-  background-color: #B3BAC5;
+  background-color: rgba(179, 186, 197, 0.1);
 }
 
 @media (min-width: 992px) {
