@@ -7,5 +7,78 @@
 .book
   display: flex
   align-items: center
+  justify-content: space-between
+  &__description
+    display: flex
+    flex-direction: column
+    max-width: 585px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: $primary-color
+    margin-bottom: 28px
+    &-color
+      color: #FAAD13
+  &__subtitle
+    font-family: $subtitle-fonts
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    color: $primary-color
+    margin: 0
+    margin-bottom: 36px
+  &__annotation
+    font-family: $text-fonts
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: $secondary-color
+    margin-bottom: 56px
+  &__buttons
+    display: flex
+    justify-content: space-between
+    max-width: 470px
+  &__button
+    border: 2px solid $accent-color
+    border-radius: 8px
+    text-align: center
+    font-family: $text-fonts
+    font-style: normal
+    font-weight: bold
+    white-space: nowrap
+    &_buy
+      padding: 18px 37px 18px 36px
+      font-size: 16px
+      line-height: 22px
+      background-color: $accent-color
+      color: $light
+    &_read
+      padding: 17px 50px 16px 50px
+      font-size: 18px
+      line-height: 25px
+      color: $accent-color
+  &__image
+    padding: 103px 105px 60px 105px
+    background-color: $background-secondary
+
+@media (min-width: 992px)
+  .book
+    &__button
+      &_buy
+        &:hover
+          background-color: $background
+          color: $accent-color
+          transition: 0.3s
+      &_read
+        &:hover
+          background-color: $accent-color
+          color: $light
+          transition: 0.3s
 
  
