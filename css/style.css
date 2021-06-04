@@ -668,6 +668,31 @@ template {
   font-size: 16px;
   line-height: 22px;
   max-width: 101px;
+  margin-right: 22px;
+}
+
+.reference__block-heart {
+  display: block;
+  width: 19px;
+  height: 17px;
+  background-image: url(../img/heart.svg);
+}
+
+.reference__block-heart:active {
+  width: 19px;
+  height: 17px;
+  background-image: url(../img/heart-active.svg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.reference__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reference__image {
@@ -723,6 +748,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 36px;
 }
 
 .reference__top-image {
@@ -732,10 +758,48 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 26px;
-  margin-bottom: 36px;
+}
+
+.reference__top-hr {
+  max-width: 321px;
+  border: 1px solid #ECEEF2;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .reference__top-button {
-  padding: 25px 124px 24px 124px;
+  padding: 25px 124px 24px 100px;
+  white-space: nowrap;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #1565D8;
+}
+
+@media (min-width: 992px) {
+  .reference__block-button:hover {
+    background-color: #1565D8;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .reference__recommendation-button:hover {
+    background-color: #1565D8;
+    color: #FFFFFF;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .reference__top-button:hover {
+    margin-left: -24px;
+    padding: 25px 124px 24px 124px;
+    background-color: #1565D8;
+    color: #FFFFFF;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 0 0 8px 8px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
