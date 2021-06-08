@@ -867,4 +867,34 @@ template {
   line-height: 22px;
   color: #5A7184;
 }
+
+.unreleased {
+  background-color: #183B56;
+  padding: 62px 0 80px 0;
+}
+
+.unreleased__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.unreleased-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.unreleased__image {
+  width: 204px;
+  height: 298px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
