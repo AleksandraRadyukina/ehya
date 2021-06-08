@@ -1,7 +1,12 @@
 .blog
   padding-top: 100px
   padding-bottom: 100px
+  &__container
+    display: grid
+    grid-template-columns: repeat(2, minmax(min-content, 1fr))
+    grid-gap: 30px
   &__title
+    grid-row: 1 / 1
     font-family: $title-fonts
     font-style: normal
     font-weight: bold
@@ -9,6 +14,8 @@
     line-height: 60px
     color: $primary-color
   &__button
+    grid-column: 2 / 3
+    justify-self: end
     border: 2px solid $accent-color
     border-radius: 22px
     color: $accent-color
@@ -19,6 +26,8 @@
     font-weight: bold
     font-size: 16px
     line-height: 20px
+    max-width: 179px
+    max-height: 44px
   &__image
     width: 556px
     height: 330px
@@ -29,6 +38,12 @@
     display: flex
     align-items: center
     max-width: 548px
+    &_motivational
+      grid-column: 2 / 3
+    &_learn
+      grid-column: 2 / 3
+    &_motivation
+      grid-column: 2 / 3
     &-image
       width: 250px
       height: 150px
@@ -59,15 +74,16 @@
       line-height: 20px
       color: $accent-color
     &-big
-        .blog__card-title
-          font-family: $title-fonts
-          font-style: normal
-          font-weight: bold
-          font-size: 24px
-          line-height: 32px
-          color: $primary-color
-          margin-bottom: 16px
-          margin-left: 10px
+      grid-row: 2 / 5
+      .blog__card-title
+        font-family: $title-fonts
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 32px
+        color: $primary-color
+        margin-bottom: 16px
+        margin-left: 10px
     &-text
       font-family: $text-fonts
       font-style: normal

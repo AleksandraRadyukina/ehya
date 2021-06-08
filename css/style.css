@@ -946,7 +946,18 @@ template {
   padding-bottom: 100px;
 }
 
+.blog__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  grid-gap: 30px;
+}
+
 .blog__title {
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -956,6 +967,11 @@ template {
 }
 
 .blog__button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-column-align: end;
+      justify-self: end;
   border: 2px solid #1565D8;
   border-radius: 22px;
   color: #1565D8;
@@ -966,6 +982,8 @@ template {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  max-width: 179px;
+  max-height: 44px;
 }
 
 .blog__image {
@@ -985,6 +1003,24 @@ template {
       -ms-flex-align: center;
           align-items: center;
   max-width: 548px;
+}
+
+.blog__card_motivational {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.blog__card_learn {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.blog__card_motivation {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
 }
 
 .blog__card-image {
@@ -1023,6 +1059,12 @@ template {
   font-size: 16px;
   line-height: 20px;
   color: #1565D8;
+}
+
+.blog__card-big {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2 / 5;
 }
 
 .blog__card-big .blog__card-title {
