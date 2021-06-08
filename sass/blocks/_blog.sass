@@ -1,0 +1,94 @@
+.blog
+  padding-top: 100px
+  padding-bottom: 100px
+  &__title
+    font-family: $title-fonts
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    color: $primary-color
+  &__button
+    border: 2px solid $accent-color
+    border-radius: 22px
+    color: $accent-color
+    background-color: $light
+    padding: 12px 53px
+    font-family: $title-fonts
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+  &__image
+    width: 556px
+    height: 330px
+    border-radius: 8px
+    object-fit: cover
+    margin-bottom: 30px
+  &__card
+    display: flex
+    align-items: center
+    max-width: 548px
+    &-image
+      width: 250px
+      height: 150px
+      border-radius: 8px
+      object-fit: cover
+      margin-right: 36px
+    &-title
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      color: $primary-color
+      margin-bottom: 18px
+    &-date
+      font-family: $text-fonts
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $secondary-color
+      margin-bottom: 16px
+    &-button
+      font-family: $title-fonts
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      color: $accent-color
+    &-big
+        .blog__card-title
+          font-family: $title-fonts
+          font-style: normal
+          font-weight: bold
+          font-size: 24px
+          line-height: 32px
+          color: $primary-color
+          margin-bottom: 16px
+          margin-left: 10px
+    &-text
+      font-family: $text-fonts
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: $secondary-color
+      max-width: 536px
+      margin-left: 10px
+
+
+
+@media (min-width: 992px)
+  .blog
+    &__card
+      &-button
+        &:hover
+          color: $primary-color
+          transition: 0.3s
+    &__button
+      &:hover
+        background-color: $accent-color
+        color: $light
+        transition: 0.3s
