@@ -611,6 +611,7 @@ template {
   color: #1565D8;
   border-radius: 8px;
   border: none;
+  margin-top: -8px;
 }
 
 .reference__title {
@@ -737,11 +738,14 @@ template {
   margin-bottom: 24px;
 }
 
-.reference__top-blocks {
-  padding: 24px 24px 26px 24px;
-  width: 360px;
+.reference__top-wrapper {
   background-color: rgba(179, 186, 197, 0.1);
   border-radius: 8px;
+}
+
+.reference__top-blocks {
+  padding: 24px 24px 0 24px;
+  width: 360px;
 }
 
 .reference__top-block {
@@ -764,11 +768,12 @@ template {
   max-width: 321px;
   border: 1px solid #ECEEF2;
   margin: 0;
-  margin-bottom: 25px;
 }
 
 .reference__top-button {
-  padding: 25px 124px 24px 100px;
+  padding: 24px;
+  width: 100%;
+  display: block;
   white-space: nowrap;
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
@@ -793,8 +798,6 @@ template {
     transition: 0.3s;
   }
   .reference__top-button:hover {
-    margin-left: -24px;
-    padding: 25px 124px 24px 124px;
     background-color: #1565D8;
     color: #FFFFFF;
     -webkit-transition: 0.3s;

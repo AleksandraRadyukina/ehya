@@ -20,6 +20,7 @@
       color: $accent-color
       border-radius: 8px
       border: none
+      margin-top: -8px
   &__title
     font-style: normal
     font-weight: bold
@@ -105,11 +106,13 @@
     color: $accent-color
     margin-bottom: 24px
   &__top
-    &-blocks
-      padding: 24px 24px 26px 24px
-      width: 360px
+    &-wrapper
       background-color: rgba($background-secondary, 0.1)
-      border-radius: 8px  
+      border-radius: 8px 
+    &-blocks
+      padding: 24px 24px 0 24px
+      width: 360px
+       
     &-block
       display: flex
       margin-bottom: 36px
@@ -123,9 +126,11 @@
       max-width: 321px
       border: 1px solid #ECEEF2
       margin: 0
-      margin-bottom: 25px
+      
     &-button
-      padding: 25px 124px 24px 100px
+      padding: 24px
+      width: 100%
+      display: block
       white-space: nowrap
       font-family: $title-fonts
       font-style: normal
@@ -143,8 +148,6 @@
         &:hover
           background-color: $accent-color
           transition: 0.3s
-      &-heart
-        &:hover
           
     &__recommendation
       &-button
@@ -155,8 +158,6 @@
     &__top
       &-button
         &:hover
-          margin-left: -24px
-          padding: 25px 124px 24px 124px
           background-color: $accent-color
           color: $light
           transition: 0.3s
