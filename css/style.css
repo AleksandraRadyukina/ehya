@@ -20,6 +20,10 @@ h3 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
@@ -387,8 +391,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 147px;
-  margin-right: 153px;
 }
 
 .header__menu {
@@ -458,11 +460,6 @@ template {
 
 .main {
   padding: 69px 0 50px 0;
-}
-
-.main__container {
-  margin-right: 150px;
-  margin-left: 150px;
 }
 
 .book {
@@ -591,8 +588,6 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 147px;
-  margin-right: 153px;
   max-width: 1143px;
 }
 
@@ -804,5 +799,72 @@ template {
     transition: 0.3s;
     border-radius: 0 0 8px 8px;
   }
+}
+
+.category__container {
+  padding-bottom: 100px;
+}
+
+.category__hr {
+  max-width: 1140px;
+  border: 1px solid #ECEEF2;
+  margin: 0;
+}
+
+.category__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 60px;
+}
+
+.category__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  min-width: 265px;
+  padding: 40px 16px 30px;
+}
+
+.category__image {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.category__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #183B56;
+  margin-bottom: 12px;
+}
+
+.category__description {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5A7184;
 }
 /*# sourceMappingURL=style.css.map */
