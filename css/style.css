@@ -897,4 +897,47 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.partners {
+  padding: 80px 0 101px;
+  background-color: #B3BAC5;
+}
+
+.partners__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 53px;
+}
+
+.partners-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 116px;
+}
+
+.partners-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 1140px;
+}
 /*# sourceMappingURL=style.css.map */
