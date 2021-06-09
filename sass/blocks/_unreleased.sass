@@ -1,6 +1,10 @@
 .unreleased
   background-color: $primary-color
   padding: 62px 0 80px 0
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
   &__title
     font-family: $title-fonts
     font-style: normal
@@ -8,10 +12,32 @@
     font-size: 36px
     line-height: 48px
     color: $light
+  &__buttons
+    display: flex
+  &__button
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    border: none
+    background-color: transparent
+    border: 2px solid $light
+    margin-left: 20px
+    &-icon
+      width: 14px
+      height: 14px
+      fill: $light
+    &-prev
+      .unreleased__button-icon
+        transform: rotate(180deg)
+  &__slider
+    overflow: hidden
   &-wrapper
     display: flex
     justify-content: space-between
   &__image
-    width: 204px
-    height: 298px
-    object-fit: cover
+    // width: 204px
+    // height: 298px
+    // object-fit: cover
+    max-width: 204px
+    height: auto
+    display: block

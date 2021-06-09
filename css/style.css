@@ -813,7 +813,8 @@ template {
 }
 
 .category__slider {
-  padding-top: 60px;
+  margin-top: 60px;
+  position: relative;
 }
 
 .category__slider-container {
@@ -826,6 +827,7 @@ template {
   position: relative;
   width: 1140px;
   height: 301px;
+  overflow: hidden;
 }
 
 .category__item {
@@ -908,6 +910,18 @@ template {
   padding: 62px 0 80px 0;
 }
 
+.unreleased__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .unreleased__title {
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
@@ -915,6 +929,37 @@ template {
   font-size: 36px;
   line-height: 48px;
   color: #FFFFFF;
+}
+
+.unreleased__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.unreleased__button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  margin-left: 20px;
+}
+
+.unreleased__button-icon {
+  width: 14px;
+  height: 14px;
+  fill: #FFFFFF;
+}
+
+.unreleased__button-prev .unreleased__button-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.unreleased__slider {
+  overflow: hidden;
 }
 
 .unreleased-wrapper {
@@ -927,10 +972,9 @@ template {
 }
 
 .unreleased__image {
-  width: 204px;
-  height: 298px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-width: 204px;
+  height: auto;
+  display: block;
 }
 
 .author-story {
@@ -1230,6 +1274,7 @@ template {
 
 .newsletter__container {
   background-color: #1565D8;
+  border-radius: 12px;
   padding-top: 60px;
   padding-bottom: 80px;
 }
@@ -1267,7 +1312,7 @@ template {
 }
 
 .newsletter__input {
-  padding: 17px;
+  padding: 15px 17px 14px 17px;
   border: none;
 }
 
