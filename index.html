@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ehya</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -220,34 +221,52 @@
   <section class="category">
     <div class="container category__container">
       <hr class="category__hr">
-      <div class="category__items">
-        <div class="category__item">
-          <img src="./img/category-image-1.svg" alt="Category icon" class="category__image">
-          <h3 class="category__title">Бизнес & Финансы</h3>
-          <p class="category__description">Книги про мир бизнеса</p>
+      <div class="category__slider">
+        <div class="category__slider-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="category-slide">
+              <div class="category__item">
+                <img src="./img/category-image-1.svg" alt="Category icon" class="category__image">
+                <h3 class="category__title">Бизнес & Финансы</h3>
+                <p class="category__description">Книги про мир бизнеса</p>
+              </div>
+              <!-- /.category__item -->
+            </div>
+            <div class="category-slide">
+              <div class="category__item">
+                <img src="./img/category-image-2.svg" alt="Category icon" class="category__image">
+                <h3 class="category__title">Самомотиватия</h3>
+                <p class="category__description">Книги о мотивации</p>
+              </div>
+              <!-- /.category__item -->
+            </div>
+            <div class="category-slide">
+              <div class="category__item">
+                <img src="./img/category-image-3.svg" alt="Category icon" class="category__image">
+                <h3 class="category__title">Романы Теленовеллы</h3>
+                <p class="category__description">Книги с крутыми историями</p>
+              </div>
+              <!-- /.category__item -->
+            </div>
+            <div class="category-slide">
+              <div class="category__item">
+                <img src="./img/category-image-4.svg" alt="Category icon" class="category__image">
+                <h3 class="category__title">Навыки будущего</h3>
+                <p class="category__description">Книги для самоподготовки
+                </p>
+              </div>
+              <!-- /.category__item -->
+            </div>
+            
+          </div>
+        
+          <!-- If we need navigation buttons -->
+          <button class="button category__button-next"></button>
         </div>
-        <!-- /.category__item -->
-        <div class="category__item">
-          <img src="./img/category-image-2.svg" alt="Category icon" class="category__image">
-          <h3 class="category__title">Самомотиватия</h3>
-          <p class="category__description">Книги о мотивации</p>
-        </div>
-        <!-- /.category__item -->
-        <div class="category__item">
-          <img src="./img/category-image-3.svg" alt="Category icon" class="category__image">
-          <h3 class="category__title">Романы Теленовеллы</h3>
-          <p class="category__description">Книги с крутыми историями</p>
-        </div>
-        <!-- /.category__item -->
-        <div class="category__item">
-          <img src="./img/category-image-4.svg" alt="Category icon" class="category__image">
-          <h3 class="category__title">Навыки будущего</h3>
-          <p class="category__description">Книги для самоподготовки
-          </p>
-        </div>
-        <!-- /.category__item -->
       </div>
-      <!-- /.category__items -->
+      <!-- /.category__slider -->
     </div>
   </section>
   <!-- /.category -->
@@ -422,5 +441,7 @@
   </section>
   <!-- /.newsletter -->
 
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
