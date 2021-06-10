@@ -34,4 +34,24 @@ const unreleasedSlider = new Swiper(".unreleased__slider", {
   },
 });
 
+const modalButton = document.querySelector('[data-toggle="modal"]');
+const closeModalButton = document.querySelector(".modal__close");
+
+modalButton.addEventListener("click", openModal);
+closeModalButton.addEventListener("click", closeModal);
+
+function openModal() {
+  const modalOverlay = document.querySelector(".modal__overlay");
+  const modalDialog = document.querySelector(".modal__dialog");
+  modalOverlay.classList.add("modal__overlay--visible");
+  modalDialog.classList.add("modal__dialog--visible");
+}
+function closeModal(event) {
+  event.preventDefault();
+  const modalOverlay = document.querySelector(".modal__overlay");
+  const modalDialog = document.querySelector(".modal__dialog");
+  modalOverlay.classList.remove("modal__overlay--visible");
+  modalDialog.classList.remove("modal__dialog--visible");
+}
+
 
