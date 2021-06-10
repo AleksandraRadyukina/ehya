@@ -8,7 +8,6 @@
   &__title
     grid-row: 1 / 1
     font-family: $title-fonts
-    font-style: normal
     font-weight: bold
     font-size: 48px
     line-height: 60px
@@ -22,7 +21,6 @@
     background-color: $light
     padding: 12px 53px
     font-family: $title-fonts
-    font-style: normal
     font-weight: bold
     font-size: 16px
     line-height: 20px
@@ -51,33 +49,29 @@
       object-fit: cover
       margin-right: 36px
     &-title
-      font-family: Roboto
-      font-style: normal
+      font-family: $subtitle-fonts
       font-weight: 500
       font-size: 22px
       line-height: 32px
       color: $primary-color
       margin-bottom: 18px
     &-date
-      font-family: $text-fonts
-      font-style: normal
-      font-weight: normal
       font-size: 14px
       line-height: 20px
       color: $secondary-color
       margin-bottom: 16px
+      text-transform: uppercase
     &-button
       font-family: $title-fonts
-      font-style: normal
       font-weight: bold
       font-size: 16px
       line-height: 20px
       color: $accent-color
+      text-transform: uppercase
     &-big
       grid-row: 2 / 5
       .blog__card-title
         font-family: $title-fonts
-        font-style: normal
         font-weight: bold
         font-size: 24px
         line-height: 32px
@@ -85,9 +79,6 @@
         margin-bottom: 16px
         margin-left: 10px
     &-text
-      font-family: $text-fonts
-      font-style: normal
-      font-weight: normal
       font-size: 18px
       line-height: 32px
       color: $secondary-color

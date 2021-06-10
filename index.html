@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link  rel = "shortcut icon"  href = "./img/favicon.ico"  type = "image/x-icon"> 
-    <link  rel = "icon"  href = "./img/favicon.ico"  type = "image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <title>Ehya</title>
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -49,20 +50,20 @@
               The Psychology of <br />Graphic Design Pricing
             </h1>
             <!-- /.title book__title -->
-            <h3 class="book__subtitle">КНИГА МИШЕЛЯ ЯНГА</h3>
+            <h3 class="book__subtitle">Книга Мишеля Янга</h3>
             <span class="book__annotation"
               >Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для крупных клиентов. Теперь я
               делюсь своими золотыми стратегиями ценообразования на творческую работу.
             </span>
             <div class="book__buttons">
-              <button class="button book__button book__button_buy">КУПИТЬ СЕЙЧАС</button>
-              <button class="button book__button book__button_read">ЧИТАТЬ ДЕМО</button>
+              <button class="button book__button book__button_buy">Купить сейчас</button>
+              <button class="button book__button book__button_read">Читать демо</button>
             </div>
           </div>
           <!-- /.book__description -->
           <div class="book__image">
             <img
-              src="./img/book-image.png"
+              src="./img/book-image.jpg"
               alt="Photo: Design Theory: The Psychology of Graphic Design Pricing"
               class="book__img"
             />
@@ -328,7 +329,13 @@
             </div>
             <!-- If we need navigation buttons -->
           </div>
-          <button class="button category__button-next"></button>
+          <button class="button category__button category__button--next">
+            <svg class="category__button-icon" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.9375 1.09375C5.625 1.40625 5.65625 1.875 5.9375 2.1875L9.71875 5.75H0.75C0.3125 5.75 0 6.09375 0 6.5V7.5C0 7.9375 0.3125 8.25 0.75 8.25H9.71875L5.9375 11.8438C5.65625 12.1562 5.65625 12.625 5.9375 12.9375L6.625 13.625C6.9375 13.9062 7.40625 13.9062 7.6875 13.625L13.7812 7.53125C14.0625 7.25 14.0625 6.78125 13.7812 6.46875L7.6875 0.40625C7.40625 0.125 6.9375 0.125 6.625 0.40625L5.9375 1.09375Z"
+              />
+            </svg>
+          </button>
         </div>
         <!-- /.category__slider -->
       </div>
@@ -397,21 +404,21 @@
         <div class="author-story__videos">
           <div class="author-story__video-main">
             <img src="./img/video-Image.jpg" alt="Видео превью" class="author-story__image-video" />
-            <button class="author-story__button">
+            <a class="author-story__button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
               <img src="./img/play-active.svg" alt="play icon" class="author-story__play" />
-            </button>
+            </a>
           </div>
           <!-- /.author-story__video-main -->
           <div class="author-story__videos-items">
             <div class="author-story__video-item">
               <div class="image-wrapper">
                 <img src="./img/video-Image-2.jpg" alt="Видео превью" class="author-story__image-video" />
-              <button class="author-story__button">
-                <img src="./img/play.svg" alt="play icon" class="author-story__play" />
-              </button>
+                <a class="author-story__button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                  <img src="./img/play.svg" alt="play icon" class="author-story__play" />
+                </a>
               </div>
               <!-- /.image-wrapper -->
-              
+
               <div class="author-story__video-wrapper">
                 <div class="author-story__video-description">
                   <h3 class="title author-story__video-title">Emelda Scandroot</h3>
@@ -424,12 +431,12 @@
             <div class="author-story__video-item">
               <div class="image-wrapper">
                 <img src="./img/video-Image-3.jpg" alt="Видео превью" class="author-story__image-video" />
-                <button class="author-story__button">
+                <a class="author-story__button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
                   <img src="./img/play.svg" alt="play icon" class="author-story__play" />
-                </button>
+                </a>
               </div>
               <!-- /.image-wrapper -->
-            
+
               <div class="author-story__video-wrapper">
                 <div class="author-story__video-description">
                   <h3 class="title author-story__video-title">Mar Rueda</h3>
@@ -442,12 +449,12 @@
             <div class="author-story__video-item">
               <div class="image-wrapper">
                 <img src="./img/video-Image-4.jpg" alt="Видео превью" class="author-story__image-video" />
-                <button class="author-story__button">
+                <a class="author-story__button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
                   <img src="./img/play.svg" alt="play icon" class="author-story__play" />
-                </button>
+                </a>
               </div>
               <!-- /.image-wrapper -->
-             
+
               <div class="author-story__video-wrapper">
                 <div class="author-story__video-description">
                   <h3 class="title author-story__video-title">Nembo Lukeni</h3>
@@ -509,12 +516,12 @@
             class="blog__card-image"
           />
           <div class="blog__card-info">
-            <span class="blog__card-date">23 МАРТА 2020</span>
+            <span class="blog__card-date">23 марта 2020</span>
             <h3 class="blog__card-title">
               29 Motivational Quotes <br />
               for Work Environments
             </h3>
-            <a href="#" class="blog__card-button">ЧИТАТЬ</a>
+            <a href="#" class="blog__card-button">Читать</a>
           </div>
         </div>
         <!-- /.blog__card_motivational -->
@@ -526,12 +533,12 @@
             class="blog__card-image"
           />
           <div class="blog__card-info">
-            <span class="blog__card-date">28 МАРТА 2020</span>
+            <span class="blog__card-date">28 марта 2020</span>
             <h3 class="blog__card-title">
               Learn To Love Growth <br />
               and You Will Be A Success
             </h3>
-            <a href="#" class="blog__card-button">ЧИТАТЬ</a>
+            <a href="#" class="blog__card-button">Читать</a>
           </div>
         </div>
         <!-- /.blog__card_learn -->
@@ -543,12 +550,12 @@
             class="blog__card-image"
           />
           <div class="blog__card-info">
-            <span class="blog__card-date">28 МАРТА 2020</span>
+            <span class="blog__card-date">28 марта 2020</span>
             <h3 class="blog__card-title">
               Motivation How To Build <br />
               Trust at your Work
             </h3>
-            <a href="#" class="blog__card-button">ЧИТАТЬ</a>
+            <a href="#" class="blog__card-button">Читать</a>
           </div>
         </div>
         <!-- /.blog__card_Motivation -->
@@ -563,9 +570,8 @@
             о наших акциях
           </h2>
           <form action="" class="newsletter__subscribe subscribe">
-            <img src="./img/mail.svg" alt="mail icon" class="mail-icon">
+            <img src="./img/mail.svg" alt="mail icon" class="newsletter__icon mail-icon" />
             <input
-            
               type="email"
               class="input newsletter__input"
               placeholder="Your email address"
@@ -583,18 +589,26 @@
         <div class="footer__wrapper">
           <div class="footer__social">
             <a href="https://ydachnyi-vybor.ru/ehya/" class="footer__logo">
-              <img src="./img/header-logo.svg" alt="Logo: Ehya" class="logo footer__logo"></a>
-              <p class="footer__text">Создайте современный и <br> креативный веб-сайт с crealand</p>
-              <div class="footer__social-wrapper">
-                <a href="https://www.google.com/" class="footer__social-link">
-                  <img src="./img/google-icon.svg" alt="Icon: Google" class="footer__social-icon"></a>
-                <a href="https://twitter.com/" class="footer__social-link">
-                  <img src="./img/twitter-icon.svg" alt="Icon: twitter" class="footer__social-icon"></a>
-                <a href="https://www.instagram.com/" class="footer__social-link">
-                  <img src="./img/instagram-icon.svg" alt="Icon: instagram" class="footer__social-icon"></a>
-                <a href="https://ru.linkedin.com/" class="footer__social-link">
-                  <img src="./img/in-icon.svg" alt="Icon: linkedin" class="footer__social-icon"></a>
-              </div>
+              <img src="./img/header-logo.svg" alt="Logo: Ehya" class="logo footer__logo"
+            /></a>
+            <p class="footer__text">
+              Создайте современный и <br />
+              креативный веб-сайт с crealand
+            </p>
+            <div class="footer__social-wrapper">
+              <a href="https://www.google.com/" class="footer__social-link">
+                <img src="./img/google-icon.svg" alt="Icon: Google" class="footer__social-icon"
+              /></a>
+              <a href="https://twitter.com/" class="footer__social-link">
+                <img src="./img/twitter-icon.svg" alt="Icon: twitter" class="footer__social-icon"
+              /></a>
+              <a href="https://www.instagram.com/" class="footer__social-link">
+                <img src="./img/instagram-icon.svg" alt="Icon: instagram" class="footer__social-icon"
+              /></a>
+              <a href="https://ru.linkedin.com/" class="footer__social-link">
+                <img src="./img/in-icon.svg" alt="Icon: linkedin" class="footer__social-icon"
+              /></a>
+            </div>
           </div>
           <!-- /.footer__social -->
           <div class="footer__list footer__product">
@@ -641,8 +655,8 @@
         </div>
         <!-- /.footer__wrapper -->
         <div class="footer__copyright">
-          <img src="./img/heart-footer.svg" alt="Footer icon" class="footer__copyright-icon">
-           <span class="footer__copyright-description">Copyright © 2019. Crafted with love.</span>
+          <img src="./img/heart-footer.svg" alt="Footer icon" class="footer__copyright-icon" />
+          <span class="footer__copyright-description">Copyright © 2019. Crafted with love.</span>
         </div>
         <!-- /.footer__copyright -->
       </div>
@@ -654,12 +668,19 @@
       <div class="modal__overlay"></div>
       <div class="modal__dialog">
         <a href="#" class="modal__close">
-          <img src="./img/close.svg" alt="icon: close">
+          <img src="./img/close.svg" alt="icon: close" />
         </a>
         <form action="send.php" method="POST" class="modal__form form">
-          <input type="text" class="input modal__input" placeholder="Ваше имя*" name="name" required minlength="2">
-          <input type="tel" class="input modal__input modal__phone" placeholder="Телефон*" name="phone" required minlength="17">
-          <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+          <input type="text" class="input modal__input" placeholder="Ваше имя*" name="name" required minlength="2" />
+          <input
+            type="tel"
+            class="input modal__input modal__phone"
+            placeholder="Телефон*"
+            name="phone"
+            required
+            minlength="17"
+          />
+          <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
           <div class="modal__form-info">
             <button class="button modal__button" type="submit">Отправить</button>
             <span class="modal__required">* обязательное поле</span>
@@ -671,6 +692,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

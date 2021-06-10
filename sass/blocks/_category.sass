@@ -8,7 +8,6 @@
   &__slider
     margin-top: 60px
     position: relative
-   
     &-container
       display: flex
       justify-content: space-between
@@ -24,25 +23,29 @@
     border: 1px solid #ECEEF2
     border-radius: 8px
     min-width: 265px
-    padding: 40px 16px 30px 
+    padding: 40px 16px 30px
     white-space: nowrap
   &__button
-    &-next
-      position: absolute
-      z-index: 1
-      padding: 20px 21px 18px
-      margin: 0
-      border: none
-      width: 56px
-      height: 56px
-      background-color: $light
-      background-image: url(../img/Button-next-slide.svg)
-      background-repeat: no-repeat
-      background-position: center
-      border-radius: 50%
-      filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+    background-color: $light
+    border-radius: 50%
+    position: absolute
+    z-index: 1
+    border: none
+    width: 56px
+    height: 56px
+    filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+    padding: 0
+    &--next
       top: 30%
       left: 98%
+    &-icon
+      width: 14px
+      height: 16px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      fill: $primary-color
   &__image
     width: 64px
     height: 64px
@@ -50,16 +53,12 @@
     margin-bottom: 40px
   &__title
     font-family: $subtitle-fonts
-    font-style: normal
     font-weight: 500
     font-size: 22px
     line-height: 32px
     color: $primary-color
     margin-bottom: 12px
   &__description
-    font-family: $text-fonts
-    font-style: normal
-    font-weight: normal
     font-size: 16px
     line-height: 22px
     color: $secondary-color

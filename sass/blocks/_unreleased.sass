@@ -22,28 +22,29 @@
     background-color: transparent
     border: 2px solid $light
     margin-left: 20px
+    position: relative
     &:hover
-      fill: $secondary-color
-      border: 2px solid $secondary-color
+      border-color: $secondary-color
       .unreleased__button-icon
         fill: $secondary-color
     &-icon
       width: 14px
       height: 14px
       fill: $light
-     
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
     &-prev
       .unreleased__button-icon
-        transform: rotate(180deg)
+        transform: rotate(180deg) translate(50%, 50%)
+        right: -50%
   &__slider
     overflow: hidden
   &-wrapper
     display: flex
     justify-content: space-between
   &__image
-    // width: 204px
-    // height: 298px
-    // object-fit: cover
     max-width: 204px
     height: auto
     display: block

@@ -28,6 +28,7 @@
     font-size: 20px
     line-height: 24px
     letter-spacing: 0.2px
+    text-transform: uppercase
     color: $primary-color
     margin: 0
     margin-bottom: 36px
@@ -51,6 +52,7 @@
     font-style: normal
     font-weight: bold
     white-space: nowrap
+    text-transform: uppercase
     &_buy
       padding: 18px 37px 18px 36px
       font-size: 16px
@@ -62,20 +64,21 @@
       font-size: 18px
       line-height: 25px
       color: $accent-color
-      background-color: $light
+      background-color: transparent
   &__image
     padding: 103px 105px 60px 105px
     background-color: rgba($background-secondary, 0.1)
-   
- 
-   
+  &__img
+    background: rgba(0, 0, 0, 0.01)
+    box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.08)
+
 
 @media (min-width: 992px)
   .book
     &__button
       &_buy
         &:hover
-          background-color: $light
+          background-color: transparent
           color: $accent-color
           transition: 0.3s
       &_read
@@ -84,4 +87,3 @@
           color: $light
           transition: 0.3s
 
- 

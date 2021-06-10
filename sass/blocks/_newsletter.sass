@@ -4,11 +4,30 @@
     border-radius: 12px
     padding-top: 60px
     padding-bottom: 80px
+    position: relative
+    overflow: hidden
+    &::before,
+    &::after
+      content: ""
+      width: 768px
+      height: 768px
+      display: block
+      border-radius: 50%
+      border: 200px solid rgba($light, .1)
+      position: absolute
+    &::before
+      bottom: 10%
+      left: -49%
+    &::after
+      top: -34%
+      right: -47%
   &-wrapper
     display: flex
     justify-content: space-between
     align-items: center
     margin: 0 60px
+    position: relative
+    z-index: 2
   &__title
     font-family: $title-fonts
     font-style: normal
@@ -17,36 +36,44 @@
     line-height: 48px
     color: $light
   &__subscribe
-    background: #FFFFFF
+    background: $light
     border: 1px solid #C3CAD9
     box-sizing: border-box
     border-radius: 8px
     max-width: 447px
+    width: 100%
     padding: 3px
+    display: flex
+  &__icon
+    margin-left: 16px
   &__input
-    padding: 15px 17px 14px 17px
+    padding: 15px 17px 14px 12px
     border: none
+    outline: none
+    font-weight: 600
+    width: 100%
+    &::placeholder
+      color: #959EAD
+
   &__button
     background: #FAAD13
     border-radius: 4px
-    padding: 13px 18px
+    padding: 9px 24px
     font-family: $text-fonts
     font-style: normal
     font-weight: bold
     font-size: 16px
     line-height: 22px
     color: $light
-    border: none
+    border: 2px solid #FAAD13
+    transition: 0.3s
 
 
 @media (min-width: 992px)
   .newsletter
     &__button
       &:hover
-        border: 2px solid #FAAD13
         color: #FAAD13
-        background-color: $light
-        transition: 0.3s
+        background-color: transparent
 
-        
 

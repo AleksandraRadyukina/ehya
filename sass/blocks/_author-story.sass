@@ -1,21 +1,18 @@
 .author-story
   padding: 104px 0 100px
+  &__container
+    max-width: 1006px
   &__description
     display: flex
     justify-content: space-between
     margin-bottom: 30px
-    max-width: 1005px
   &__title
     font-family: $title-fonts
-    font-style: normal
     font-weight: bold
     font-size: 48px
     line-height: 60px
     color: $primary-color
   &__text
-    font-family: $text-fonts
-    font-style: normal
-    font-weight: normal
     font-size: 18px
     line-height: 32px
     color: $secondary-color
@@ -26,11 +23,12 @@
     &-items
       display: flex
       justify-content: space-between
-      width: 1005px
+      width: 100%
   &__video
     &-main
       position: relative
       .author-story__button
+        display: flex
         position: absolute
         width: 100px
         height: 100px
@@ -39,8 +37,15 @@
         top: 50%
         left: 50%
         transform: translate(-50%,-50%)
+      .author-story__play
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 30px
+        height: 39px
       .author-story__image-video
-        width: 1005px
+        width: 100%
         height: 380px
         object-fit: cover
     &-wrapper
@@ -48,22 +53,17 @@
       justify-content: space-between
     &-title
       font-family: $subtitle-fonts
-      font-style: normal
       font-weight: 500
       font-size: 22px
       line-height: 32px
       color: $primary-color
       margin-bottom: 10px
     &-info
-      font-family: $text-fonts
-      font-style: normal
-      font-weight: normal
       font-size: 16px
       line-height: 22px
       color: $secondary-color
   &__image
     &-video
-      
       width: 315px
       height: 200px
       object-fit: cover
@@ -77,6 +77,11 @@
       left: 50%
       transform: translate(-50%,-50%)
       background: none
+  &__play
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
 
 .image-wrapper
   position: relative
@@ -90,8 +95,14 @@
           &:hover
             background-color: $background-secondary
     &__button
+      width: 100px
+      height: 100px
       &:hover
-        width: 100px
-        height: 100px
         background-color: $background-secondary
         border-radius: 50%
+    &__play
+      &:hover
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
