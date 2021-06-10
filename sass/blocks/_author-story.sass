@@ -4,6 +4,7 @@
     display: flex
     justify-content: space-between
     margin-bottom: 30px
+    max-width: 1005px
   &__title
     font-family: $title-fonts
     font-style: normal
@@ -24,8 +25,20 @@
     flex-wrap: wrap
     &-items
       display: flex
+      justify-content: space-between
+      width: 1005px
   &__video
     &-main
+      position: relative
+      .author-story__button
+        position: absolute
+        width: 100px
+        height: 100px
+        background-color: $light
+        border-radius: 50%
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
       .author-story__image-video
         width: 1005px
         height: 380px
@@ -50,8 +63,35 @@
       color: $secondary-color
   &__image
     &-video
+      
       width: 315px
       height: 200px
       object-fit: cover
       margin-bottom: 22px
-    
+  &__button
+      border: none
+      position: absolute
+      width: 30px
+      height: 39px
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      background: none
+
+.image-wrapper
+  position: relative
+
+
+@media (min-width: 992px)
+  .author-story
+    &__video
+      &-main
+        .author-story__button
+          &:hover
+            background-color: $background-secondary
+    &__button
+      &:hover
+        width: 100px
+        height: 100px
+        background-color: $background-secondary
+        border-radius: 50%

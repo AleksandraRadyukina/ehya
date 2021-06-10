@@ -54,4 +54,26 @@ function closeModal(event) {
   modalDialog.classList.remove("modal__dialog--visible");
 }
 
+$(".form").each(function() {
+  $('.modal__phone').mask('+7 (000) 000-0000'),
+  $('.footer__input-phone').mask('+7 (000) 000-0000'),
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "The name must be at least two letters",
+      },
+      phone: {
+        required: "Please enter your phone number",
+        minlength: "please enter 10 digits",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+})
+
 

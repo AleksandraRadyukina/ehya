@@ -397,17 +397,21 @@
         <div class="author-story__videos">
           <div class="author-story__video-main">
             <img src="./img/video-Image.jpg" alt="Видео превью" class="author-story__image-video" />
-            <button class="author-story__batton">
+            <button class="author-story__button">
               <img src="./img/play-active.svg" alt="play icon" class="author-story__play" />
             </button>
           </div>
           <!-- /.author-story__video-main -->
           <div class="author-story__videos-items">
             <div class="author-story__video-item">
-              <img src="./img/video-Image-2.jpg" alt="Видео превью" class="author-story__image-video" />
-              <button class="author-story__batton">
+              <div class="image-wrapper">
+                <img src="./img/video-Image-2.jpg" alt="Видео превью" class="author-story__image-video" />
+              <button class="author-story__button">
                 <img src="./img/play.svg" alt="play icon" class="author-story__play" />
               </button>
+              </div>
+              <!-- /.image-wrapper -->
+              
               <div class="author-story__video-wrapper">
                 <div class="author-story__video-description">
                   <h3 class="title author-story__video-title">Emelda Scandroot</h3>
@@ -418,10 +422,14 @@
               </div>
             </div>
             <div class="author-story__video-item">
-              <img src="./img/video-Image-3.jpg" alt="Видео превью" class="author-story__image-video" />
-              <button class="author-story__batton">
-                <img src="./img/play.svg" alt="play icon" class="author-story__play" />
-              </button>
+              <div class="image-wrapper">
+                <img src="./img/video-Image-3.jpg" alt="Видео превью" class="author-story__image-video" />
+                <button class="author-story__button">
+                  <img src="./img/play.svg" alt="play icon" class="author-story__play" />
+                </button>
+              </div>
+              <!-- /.image-wrapper -->
+            
               <div class="author-story__video-wrapper">
                 <div class="author-story__video-description">
                   <h3 class="title author-story__video-title">Mar Rueda</h3>
@@ -432,10 +440,14 @@
               </div>
             </div>
             <div class="author-story__video-item">
-              <img src="./img/video-Image-4.jpg" alt="Видео превью" class="author-story__image-video" />
-              <button class="author-story__batton">
-                <img src="./img/play.svg" alt="play icon" class="author-story__play" />
-              </button>
+              <div class="image-wrapper">
+                <img src="./img/video-Image-4.jpg" alt="Видео превью" class="author-story__image-video" />
+                <button class="author-story__button">
+                  <img src="./img/play.svg" alt="play icon" class="author-story__play" />
+                </button>
+              </div>
+              <!-- /.image-wrapper -->
+             
               <div class="author-story__video-wrapper">
                 <div class="author-story__video-description">
                   <h3 class="title author-story__video-title">Nembo Lukeni</h3>
@@ -656,7 +668,9 @@
       </div>
     </div>
 
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
