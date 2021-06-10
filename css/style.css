@@ -415,20 +415,22 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style-type: none;
-  width: 283px;
+  width: 267px;
   padding: 0;
   margin: 0;
 }
 
 .header__menu-link {
-  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
   line-height: 32px;
   font-weight: 600;
   color: #183B56;
 }
 
 .header__button {
-  padding: 13px 28px;
+  padding: 13px 30px;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -455,7 +457,7 @@ template {
 }
 
 .main {
-  padding: 69px 0 50px 0;
+  padding: 68px 0 50px 0;
 }
 
 .book {
@@ -488,6 +490,7 @@ template {
   line-height: 60px;
   letter-spacing: 0.2px;
   color: #183B56;
+  margin-top: -11px;
   margin-bottom: 28px;
 }
 
@@ -558,12 +561,15 @@ template {
 .book__image {
   padding: 103px 105px 60px 105px;
   background-color: rgba(179, 186, 197, 0.1);
+  width: 488px;
+  height: 580px;
 }
 
 .book__img {
   background: rgba(0, 0, 0, 0.01);
   -webkit-box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.08);
+  margin-left: 17px;
 }
 
 @media (min-width: 992px) {
@@ -582,7 +588,7 @@ template {
 }
 
 .reference {
-  padding-top: 50px;
+  padding-top: 49px;
   padding-bottom: 79px;
 }
 
@@ -610,7 +616,7 @@ template {
   color: #1565D8;
   border-radius: 8px;
   border: none;
-  margin-top: -8px;
+  margin-top: -11px;
 }
 
 .reference__title {
@@ -653,6 +659,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 12px;
 }
 
 .reference__block-button {
@@ -668,19 +675,25 @@ template {
   margin-right: 22px;
 }
 
-.reference__block-heart {
+.reference__heart {
   display: block;
-  width: 19px;
-  height: 17px;
-  background-image: url(../img/heart.svg);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
 }
 
-.reference__block-heart:active {
-  width: 19px;
-  height: 17px;
-  background-image: url(../img/heart-active.svg);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.reference__heart-input {
+  display: none;
+}
+
+.reference__heart-input:checked ~ .reference__heart-icon {
+  fill: #DE0303;
+}
+
+.reference__heart-icon {
+  fill: #959EAD;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .reference__buttons {
@@ -729,6 +742,16 @@ template {
   margin-bottom: 24px;
 }
 
+.reference__price-top {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1565D8;
+  margin-bottom: 19px;
+}
+
 .reference__top-wrapper {
   background-color: rgba(179, 186, 197, 0.1);
   border-radius: 8px;
@@ -759,6 +782,7 @@ template {
   max-width: 321px;
   border: 1px solid #ECEEF2;
   margin: 0;
+  margin-top: -8px;
 }
 
 .reference__top-button {
@@ -781,11 +805,17 @@ template {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+  .reference__recommendation-button {
+    text-transform: uppercase;
+  }
   .reference__recommendation-button:hover {
     background-color: #1565D8;
     color: #FFFFFF;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+  }
+  .reference__top-button {
+    text-transform: uppercase;
   }
   .reference__top-button:hover {
     background-color: #1565D8;
@@ -797,7 +827,7 @@ template {
 }
 
 .category__container {
-  padding-bottom: 100px;
+  padding-bottom: 38px;
 }
 
 .category__hr {
@@ -819,7 +849,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  width: 1140px;
+  width: 1150px;
   height: 301px;
   overflow: hidden;
 }
@@ -908,7 +938,7 @@ template {
 
 .unreleased {
   background-color: #183B56;
-  padding: 62px 0 80px 0;
+  padding: 31px 0 67px 0;
 }
 
 .unreleased__header {
@@ -921,6 +951,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 
 .unreleased__title {
@@ -949,11 +980,11 @@ template {
   position: relative;
 }
 
-.unreleased__button:hover {
+.unreleased__button-disabled {
   border-color: #5A7184;
 }
 
-.unreleased__button:hover .unreleased__button-icon {
+.unreleased__button-disabled .unreleased__button-icon {
   fill: #5A7184;
 }
 
@@ -988,7 +1019,9 @@ template {
 }
 
 .unreleased__image {
-  max-width: 204px;
+  max-width: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: auto;
   display: block;
 }
@@ -1008,7 +1041,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  max-width: 977px;
 }
 
 .author-story__title {
@@ -1057,8 +1091,8 @@ template {
   height: 100px;
   background-color: #FFFFFF;
   border-radius: 50%;
-  top: 50%;
-  left: 50%;
+  top: 47%;
+  left: 51%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -1078,6 +1112,7 @@ template {
   height: 380px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 27px;
 }
 
 .author-story__video-wrapper {
@@ -1109,7 +1144,7 @@ template {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .author-story__button {
@@ -1117,8 +1152,8 @@ template {
   position: absolute;
   width: 30px;
   height: 39px;
-  top: 50%;
-  left: 50%;
+  top: 46%;
+  left: 52%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: none;
@@ -1185,6 +1220,8 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 116px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .partners-logos {
@@ -1194,14 +1231,14 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 1140px;
 }
 
 .blog {
-  padding-top: 100px;
+  padding-top: 97px;
   padding-bottom: 100px;
 }
 
@@ -1241,6 +1278,7 @@ template {
   line-height: 20px;
   max-width: 179px;
   max-height: 44px;
+  margin-top: 10px;
 }
 
 .blog__image {
@@ -1262,10 +1300,21 @@ template {
   max-width: 548px;
 }
 
+.blog__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .blog__card_motivational {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
+  margin-top: 10px;
 }
 
 .blog__card_learn {
@@ -1316,6 +1365,7 @@ template {
 }
 
 .blog__card-big {
+  margin-top: 10px;
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   grid-row: 2 / 5;
@@ -1418,6 +1468,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 22px;
 }
 
 .newsletter__icon {
@@ -1479,9 +1530,6 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 72px;
 }
 
@@ -1495,6 +1543,10 @@ template {
           flex-direction: column;
 }
 
+.footer__social-link {
+  margin-bottom: 7px;
+}
+
 .footer__logo {
   width: 90px;
   height: 28px;
@@ -1506,6 +1558,22 @@ template {
   line-height: 28px;
   color: #5A7184;
   margin-bottom: 32px;
+}
+
+.footer__product {
+  margin-left: 65px;
+}
+
+.footer__services {
+  margin-left: 82px;
+}
+
+.footer__company {
+  margin-left: 81px;
+}
+
+.footer__still {
+  margin-left: 96px;
 }
 
 .footer__title {
@@ -1551,7 +1619,7 @@ template {
   padding: 16px 16px 12px;
   background-color: #1565D8;
   border-radius: 50%;
-  margin-bottom: 36px;
+  margin-bottom: 26px;
 }
 
 .footer__copyright-description {
@@ -1648,5 +1716,110 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 15px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .reference__container {
+    max-width: 990px;
+  }
+  .reference__recommendation-button {
+    padding: 20px 243px 20px 247px;
+    white-space: nowrap;
+  }
+  .reference__block {
+    width: 320px;
+    padding: 11px 18px 11px 11px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reference__image {
+    width: 140px;
+    height: 200px;
+    margin-right: 10px;
+  }
+  .reference__top-blocks {
+    padding: 14px 10px 0 14px;
+    width: 320px;
+  }
+  .reference__name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .category__slider-container {
+    width: 990px;
+  }
+  .newsletter__subscribe {
+    max-width: 417px;
+  }
+  .blog__image {
+    width: 456px;
+    height: 300px;
+  }
+  .blog__card-text {
+    margin-left: 0;
+  }
+  .blog__card-title {
+    margin-left: 0;
+  }
+  .blog__card_motivational {
+    margin-top: 0;
+  }
+  .blog__card-big {
+    margin-top: 0;
+  }
+  .blog__card-image {
+    margin-right: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .main {
+    padding: 48px 0 40px 0;
+  }
+  .book__description {
+    max-width: 455px;
+  }
+  .book__title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .book__subtitle {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 26px;
+  }
+  .book__annotation {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 36px;
+  }
+  .book__button_buy {
+    padding: 18px 27px 18px 26px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .book__button_read {
+    padding: 17px 35px 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .book__image {
+    width: 400px;
+    height: 450px;
+    padding: 80px 80px 60px;
+  }
+  .book__img {
+    margin-left: 0;
+    width: 200px;
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

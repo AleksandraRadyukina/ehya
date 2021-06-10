@@ -6,29 +6,26 @@ const swiper = new Swiper(".category__slider-container", {
   },
   // Navigation arrows
   navigation: {
-    nextEl: ".category__button-next",
+    nextEl: ".category__button--next",
   },
   slidesPerView: 4,
   spaceBetween: 30,
   slideClass: "category-slide",
+  breakpoints: {
+    668: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
 });
 
-// const unreleasedSlider = new Swiper(".unreleased__slider", {
-//   loop: true,
-//   keyboard: {
-//     enabled: true,
-//   },
-//   slidesPerVeiw: 5,
-//   spaceBetween: 30,
-//   slideClass: "unreleased__slide",
-// });
-
 const unreleasedSlider = new Swiper(".unreleased__slider", {
-  loop: true,
+  
   slidesPerView: 5,
   spaceBetween: 30,
   slideClass: "unreleased__slide",
   navigation: {
+    disabledClass: "unreleased__button-disabled",
     nextEl: ".unreleased__button-next",
     prevEl: ".unreleased__button-prev",
   },
@@ -54,26 +51,24 @@ function closeModal(event) {
   modalDialog.classList.remove("modal__dialog--visible");
 }
 
-$(".form").each(function() {
-  $('.modal__phone').mask('+7 (000) 000-0000'),
-  $('.footer__input-phone').mask('+7 (000) 000-0000'),
-  $(this).validate({
-    errorClass: "invalid",
-    messages: {
-      name: {
-        required: "Please specify your name",
-        minlength: "The name must be at least two letters",
+$(".form").each(function () {
+  $(".modal__phone").mask("+7 (000) 000-0000"),
+    $(".footer__input-phone").mask("+7 (000) 000-0000"),
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name must be at least two letters",
+        },
+        phone: {
+          required: "Please enter your phone number",
+          minlength: "please enter 10 digits",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
       },
-      phone: {
-        required: "Please enter your phone number",
-        minlength: "please enter 10 digits",
-      },
-      email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com",
-      },
-    },
-  });
-})
-
-
+    });
+});

@@ -1,10 +1,11 @@
 .unreleased
   background-color: $primary-color
-  padding: 62px 0 80px 0
+  padding: 31px 0 67px 0
   &__header
     display: flex
     justify-content: space-between
     align-items: center
+    margin-bottom: 30px
   &__title
     font-family: $title-fonts
     font-style: normal
@@ -23,7 +24,7 @@
     border: 2px solid $light
     margin-left: 20px
     position: relative
-    &:hover
+    &-disabled
       border-color: $secondary-color
       .unreleased__button-icon
         fill: $secondary-color
@@ -45,6 +46,7 @@
     display: flex
     justify-content: space-between
   &__image
-    max-width: 204px
+    max-width: 223px
+    object-fit: cover
     height: auto
     display: block
