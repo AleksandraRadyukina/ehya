@@ -1718,6 +1718,42 @@ template {
   margin-top: 15px;
 }
 
+@media (max-width: 1280px) {
+  .container {
+    width: 1069px;
+  }
+  .book__description {
+    max-width: 596px;
+  }
+  .book__image {
+    padding: 82px 70px 38px 70px;
+    width: 403px;
+    height: 506px;
+  }
+  .reference__recommendation {
+    max-width: 702px;
+  }
+  .reference__recommendation-button {
+    padding: 24px 262px 24px 262px;
+  }
+  .reference__block {
+    padding: 11px 13px 11px 10px;
+    max-width: 336px;
+    margin-bottom: 32px;
+  }
+  .reference__image {
+    width: 150px;
+    margin-right: 10px;
+  }
+  .reference__top-blocks {
+    padding: 24px 24px 0 22px;
+    width: 338px;
+  }
+  .reference__top-image {
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
