@@ -1752,6 +1752,28 @@ template {
   .reference__top-image {
     margin-right: 10px;
   }
+  .category__item {
+    width: 250px;
+    padding: 40px 0 50px 0;
+  }
+  .category__image {
+    width: 62px;
+    height: 62px;
+  }
+  .category__slider-container {
+    max-width: 1016px;
+  }
+  .unreleased__header {
+    width: 1016px;
+  }
+  .unreleased__image {
+    max-width: 180px;
+    height: 280px;
+  }
+  .unreleased__slider {
+    margin: 0;
+    max-width: 1016px;
+  }
 }
 
 @media (max-width: 1200px) {
