@@ -12,9 +12,9 @@ const swiper = new Swiper(".category__slider-container", {
   spaceBetween: 30,
   slideClass: "category-slide",
   breakpoints: {
-    668: {
+    992: {
       slidesPerView: 3,
-      spaceBetween: 30
+      spaceBetween: 25
     }
   }
 });
@@ -29,6 +29,12 @@ const unreleasedSlider = new Swiper(".unreleased__slider", {
     nextEl: ".unreleased__button-next",
     prevEl: ".unreleased__button-prev",
   },
+  breakpoints: {
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 25
+    }
+  }
 });
 
 const modalButton = document.querySelector('[data-toggle="modal"]');
