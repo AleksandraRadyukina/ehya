@@ -17,40 +17,43 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container header__container">
-        <a href="https://ydachnyi-vybor.ru/ehya" class="header__logo">
-          <img src="./img/header-logo.svg" alt="Logo: Ehya" class="logo" />
+    <header class="navbar">
+      <div class="container navbar__container">
+        <a href="https://ydachnyi-vybor.ru/ehya" class="navbar__logo">
+          <img src="./img/navbar-logo.svg" alt="Logo: Ehya" class="logo" />
         </a>
-        <div class="header__menu">
-          <nav class="header__menu-nav">
-            <ul class="header__menu-items">
-              <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Рекомендации</a>
+        <div class="navbar__menu">
+          <nav class="navbar__menu-nav">
+            <ul class="navbar__menu-items">
+              <li class="navbar__menu-item">
+                <a href="#" class="navbar__menu-link">Рекомендации</a>
               </li>
-              <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Книги</a>
+              <li class="navbar__menu-item">
+                <a href="#" class="navbar__menu-link">Книги</a>
               </li>
-              <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Блог</a>
+              <li class="navbar__menu-item">
+                <a href="#" class="navbar__menu-link">Блог</a>
               </li>
             </ul>
           </nav>
-          <button data-toggle="modal" class="header__button">Получить</button>
+          <button data-toggle="modal" class="navbar__button">Получить</button>
         </div>
       </div>
     </header>
     <!-- /.header -->
-    <main class="main">
+
+    <!-- секция мейн-->
+
+    <!-- <main class="main">
       <div class="container main__container">
         <div class="book">
           <div class="book__description">
             <h1 class="title book__title">
               <span class="book__title-color">Design Theory:</span> <br />
               The Psychology of <br />Graphic Design Pricing
-            </h1>
+            </h1> -->
             <!-- /.title book__title -->
-            <h3 class="book__subtitle">Книга Мишеля Янга</h3>
+           <!-- <h3 class="book__subtitle">Книга Мишеля Янга</h3>
             <span class="book__annotation"
               >Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для крупных клиентов. Теперь я
               делюсь своими золотыми стратегиями ценообразования на творческую работу.
@@ -59,21 +62,24 @@
               <button class="button book__button book__button_buy">Купить сейчас</button>
               <button class="button book__button book__button_read">Читать демо</button>
             </div>
-          </div>
+          </div> -->
           <!-- /.book__description -->
-          <div class="book__image">
+          <!--<div class="book__image">
             <img
               src="./img/book-image.jpg"
               alt="Photo: Design Theory: The Psychology of Graphic Design Pricing"
               class="book__img"
             />
-          </div>
+          </div> -->
           <!-- /.book__image -->
-        </div>
-      </div>
+       <!-- </div> -->
+      <!-- </div>
       <!-- /.container main__container -->
-    </main>
+   <!--  </main> -->
     <!-- /.main -->
+
+    <!-- секция рекомендации 
+
     <section class="reference">
       <div class="container reference__container">
         <div class="reference__recommendation">
@@ -109,7 +115,7 @@
               </div>
             </div>
             <!-- /.referenct__block"-->
-            <div class="reference__block reference__block-second">
+           <!--  <div class="reference__block reference__block-second">
               <img src="./img/reference-books-4.jpg" alt="Photo: Educated: a Memoir" class="reference__image" />
               <div class="reference__block-info">
                 <h3 class="reference__name">
@@ -139,7 +145,7 @@
               </div>
             </div>
             <!-- /.reference__block"-->
-            <div class="reference__block reference__block-third">
+           <!--  <div class="reference__block reference__block-third">
               <img src="./img/reference-books-2.jpg" alt="Photo: The Blue Flowers Ray…" class="reference__image" />
               <div class="reference__block-info">
                 <h3 class="reference__name">The Blue <br />Flowers Ray…</h3>
@@ -166,7 +172,7 @@
               </div>
             </div>
             <!-- /.reference__block"-->
-            <div class="reference__block reference__block-fourth">
+           <!--  <div class="reference__block reference__block-fourth">
               <img src="./img/reference-books-5.jpg" alt="Photo: There There: a Novel by TO" class="reference__image" />
               <div class="reference__block-info">
                 <h3 class="reference__name">
@@ -196,7 +202,7 @@
               </div>
             </div>
             <!-- /.reference__block"-->
-            <div class="reference__block reference__block-fifth">
+           <!--  <div class="reference__block reference__block-fifth">
               <img src="./img/reference-books-3.jpg" alt="Photo: WMNDFL: The Inspiration" class="reference__image" />
               <div class="reference__block-info">
                 <h3 class="reference__name">
@@ -227,7 +233,7 @@
             </div>
             <!-- /.reference__block"-->
 
-            <div class="reference__block reference__block-sixth">
+            <!-- <div class="reference__block reference__block-sixth">
               <img src="./img/reference-books-6.jpg" alt="Photo: Making Things Happen" class="reference__image" />
               <div class="reference__block-info">
                 <h3 class="reference__name">
@@ -257,11 +263,11 @@
               </div>
             </div>
             <!-- /.reference__block"-->
-            <button class="button reference__recommendation-button">Больше Рекомендаций</button>
+            <!-- <button class="button reference__recommendation-button">Больше Рекомендаций</button>
           </div>
         </div>
         <!-- /.reference__recommendation -->
-        <div class="reference__top">
+      <!--   <div class="reference__top">
           <h2 class="title reference__title">Топ Месяца</h2>
           <div class="reference__top-wrapper">
             <div class="reference__top-blocks">
@@ -281,7 +287,7 @@
                 </div>
               </div>
               <!-- /.reference__block_top -->
-              <div class="reference__top-block">
+             <!--  <div class="reference__top-block">
                 <img
                   src="./img/reference-top-2.jpg"
                   alt="Photo: Hacking Growth Break Problem"
@@ -297,7 +303,7 @@
                 </div>
               </div>
               <!-- /.reference__block_top -->
-              <div class="reference__top-block">
+             <!--  <div class="reference__top-block">
                 <img
                   src="./img/reference-top-3.jpg"
                   alt="Photo: Very Nice a Novel by Mercy"
@@ -313,7 +319,7 @@
                 </div>
               </div>
               <!-- /.reference__block_top -->
-              <div class="reference__top-block">
+           <!--    <div class="reference__top-block">
                 <img
                   src="./img/reference-top-4.jpg"
                   alt="Photo: Hooked : How to Build Products"
@@ -329,31 +335,34 @@
                 </div>
               </div>
               <!-- /.reference__block_top -->
-              <hr class="reference__top-hr" />
+            <!--   <hr class="reference__top-hr" />
             </div>
             <a href="#" class="reference__top-button">Лучшие книги</a>
           </div>
         </div>
         <!-- /.reference__top -->
-      </div>
+     <!--  </div>
     </section>
     <!-- /.reference -->
+
+    <!--  секция категории 
+
     <section class="category">
       <div class="container category__container">
         <hr class="category__hr" />
         <div class="category__slider">
           <div class="category__slider-container">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+           <!--  <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="category-slide">
+             <!--  <div class="category-slide">
                 <div class="category__item">
                   <img src="./img/category-image-1.svg" alt="Category icon" class="category__image" />
                   <h3 class="category__title">Бизнес & Финансы</h3>
                   <p class="category__description">Книги про мир бизнеса</p>
                 </div>
                 <!-- /.category__item -->
-              </div>
+             <!--  </div>
               <div class="category-slide">
                 <div class="category__item">
                   <img src="./img/category-image-2.svg" alt="Category icon" class="category__image" />
@@ -361,7 +370,7 @@
                   <p class="category__description">Книги о мотивации</p>
                 </div>
                 <!-- /.category__item -->
-              </div>
+             <!--  </div>
               <div class="category-slide">
                 <div class="category__item">
                   <img src="./img/category-image-3.svg" alt="Category icon" class="category__image" />
@@ -369,7 +378,7 @@
                   <p class="category__description">Книги с крутыми историями</p>
                 </div>
                 <!-- /.category__item -->
-              </div>
+            <!--   </div>
               <div class="category-slide">
                 <div class="category__item">
                   <img src="./img/category-image-4.svg" alt="Category icon" class="category__image" />
@@ -377,7 +386,7 @@
                   <p class="category__description">Книги для самоподготовки</p>
                 </div>
                 <!-- /.category__item -->
-              </div>
+             <!--  </div>
               <div class="category-slide">
                 <div class="category__item">
                   <img src="./img/category-image-1.svg" alt="Category icon" class="category__image" />
@@ -385,7 +394,7 @@
                   <p class="category__description">Книги про мир бизнеса</p>
                 </div>
                 <!-- /.category__item -->
-              </div>
+            <!--   </div>
               <div class="category-slide">
                 <div class="category__item">
                   <img src="./img/category-image-2.svg" alt="Category icon" class="category__image" />
@@ -393,7 +402,7 @@
                   <p class="category__description">Книги о мотивации</p>
                 </div>
                 <!-- /.category__item -->
-              </div>
+           <!--    </div>
               <div class="category-slide">
                 <div class="category__item">
                   <img src="./img/category-image-3.svg" alt="Category icon" class="category__image" />
@@ -401,7 +410,7 @@
                   <p class="category__description">Книги с крутыми историями</p>
                 </div>
                 <!-- /.category__item -->
-              </div>
+            <!--   </div>
               <div class="category-slide">
                 <div class="category__item">
                   <img src="./img/category-image-4.svg" alt="Category icon" class="category__image" />
@@ -409,10 +418,10 @@
                   <p class="category__description">Книги для самоподготовки</p>
                 </div>
                 <!-- /.category__item -->
-              </div>
+            <!--   </div>
             </div>
             <!-- If we need navigation buttons -->
-          </div>
+         <!--  </div>
           <button class="button category__button category__button--next">
             <svg class="category__button-icon" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -422,9 +431,12 @@
           </button>
         </div>
         <!-- /.category__slider -->
-      </div>
+    <!--   </div>
     </section>
     <!-- /.category -->
+
+    <!-- секция неизданное 
+
     <section class="unreleased">
       <div class="container unreleased__container">
         <div class="unreleased__header">
@@ -475,6 +487,9 @@
       </div>
     </section>
     <!-- /.unreleased -->
+
+    <!--  секция истории авторов 
+      
     <section class="author-story">
       <div class="container author-story__container">
         <div class="author-story__description">
@@ -485,7 +500,7 @@
           </p>
         </div>
         <!-- /.author-story__description -->
-        <div class="author-story__videos">
+      <!--   <div class="author-story__videos">
           <div class="author-story__video-main">
             <img src="./img/video-Image.jpg" alt="Видео превью" class="author-story__image-video" />
             <a class="author-story__button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
@@ -493,7 +508,7 @@
             </a>
           </div>
           <!-- /.author-story__video-main -->
-          <div class="author-story__videos-items">
+        <!--   <div class="author-story__videos-items">
             <div class="author-story__video-item author-story__video-item-first">
               <div class="image-wrapper">
                 <img src="./img/video-Image-2.jpg" alt="Видео превью" class="author-story__image-video" />
@@ -504,7 +519,7 @@
               <!-- /.image-wrapper -->
 
               
-                <div class="author-story__video-description">
+            <!--     <div class="author-story__video-description">
                   <div class="author-story__video-wrapper">
                     <h3 class="title author-story__video-title">Emelda Scandroot</h3>
                     <img src="./img/bookmark.svg" alt="bookmark" class="author-story__video-bookmark" />
@@ -515,7 +530,7 @@
                 <!-- /.author-story__video-description -->
                 
               
-            </div>
+         <!--    </div>
             <div class="author-story__video-item author-story__video-item-second">
               <div class="image-wrapper">
                 <img src="./img/video-Image-3.jpg" alt="Видео превью" class="author-story__image-video" />
@@ -526,7 +541,7 @@
               <!-- /.image-wrapper -->
 
               
-                <div class="author-story__video-description">
+             <!--    <div class="author-story__video-description">
                   <div class="author-story__video-wrapper">
                     <h3 class="title author-story__video-title">Mar Rueda</h3>
                     <img src="./img/bookmark.svg" alt="bookmark" class="author-story__video-bookmark" />
@@ -536,7 +551,7 @@
                 <!-- /.author-story__video-description -->
                 
               
-            </div>
+         <!--    </div>
             <div class="author-story__video-item author-story__video-item-third">
               <div class="image-wrapper">
                 <img src="./img/video-Image-4.jpg" alt="Видео превью" class="author-story__image-video" />
@@ -547,7 +562,7 @@
               <!-- /.image-wrapper -->
 
              
-                <div class="author-story__video-description">
+           <!--      <div class="author-story__video-description">
                   <div class="author-story__video-wrapper">
                     <h3 class="title author-story__video-title">Nembo Lukeni</h3>
                     <img src="./img/bookmark.svg" alt="bookmark" class="author-story__video-bookmark" />
@@ -557,13 +572,16 @@
                
               
               <!-- /.author-story__video-description -->
-            </div>
+          <!--   </div>
           </div>
           <!-- /.author-story__videos-items -->
-        </div>
+      <!--   </div>
       </div>
     </section>
     <!-- /.author-story -->
+
+    <!--  секциия партнеры 
+
     <section class="partners">
       <div class="container partners__container">
         <h3 class="partners__title">Некоторые из издателей, с которыми мы сотрудничали</h3>
@@ -589,6 +607,9 @@
       </div>
     </section>
     <!-- /.partners -->
+
+    <!-- секция блог 
+
     <section class="blog">
       <div class="container blog__container">
         <h2 class="title blog__title">Ehya Блог</h2>
@@ -602,7 +623,7 @@
           </p>
         </div>
         <!-- /.blog__card_steps -->
-        <div class="blog__card blog__card_motivational">
+      <!--   <div class="blog__card blog__card_motivational">
           <img
             src="./img/blog-Image.jpg"
             alt="29 Motivational Quotes
@@ -619,7 +640,7 @@
           </div>
         </div>
         <!-- /.blog__card_motivational -->
-        <div class="blog__card blog__card_learn">
+       <!--  <div class="blog__card blog__card_learn">
           <img
             src="./img/blog-Image-2.jpg"
             alt="Learn To Love Growth
@@ -636,7 +657,7 @@
           </div>
         </div>
         <!-- /.blog__card_learn -->
-        <div class="blog__card blog__card_motivation">
+      <!--   <div class="blog__card blog__card_motivation">
           <img
             src="./img/blog-Image-3.jpg"
             alt="Motivation How To Build 
@@ -653,9 +674,12 @@
           </div>
         </div>
         <!-- /.blog__card_Motivation -->
-      </div>
+    <!--   </div>
     </section>
     <!-- /.blog -->
+
+    <!--  секция подписка 
+
     <section class="newsletter">
       <div class="container newsletter__container">
         <div class="newsletter-wrapper">
@@ -678,6 +702,9 @@
       </div>
     </section>
     <!-- /.newsletter -->
+
+    <!--  секция футер 
+
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__wrapper">
@@ -705,7 +732,7 @@
             </div>
           </div>
           <!-- /.footer__social -->
-          <div class="footer__list footer__product">
+      <!--     <div class="footer__list footer__product">
             <h3 class="footer__title">Продукт</h3>
             <ul class="footer__ul">
               <li class="footer__item"><a href="#" class="footer__link">Лэндинг</a></li>
@@ -716,7 +743,7 @@
             </ul>
           </div>
           <!-- /.footer__list footer__product -->
-          <div class="footer__list footer__services">
+       <!--    <div class="footer__list footer__services">
             <h3 class="footer__title">Сервисы</h3>
             <ul class="footer__ul">
               <li class="footer__item"><a href="#" class="footer__link">Документация</a></li>
@@ -727,7 +754,7 @@
             </ul>
           </div>
           <!-- /.footer__list footer__services -->
-          <div class="footer__list footer__company">
+       <!--    <div class="footer__list footer__company">
             <h3 class="footer__title">Компания</h3>
             <ul class="footer__ul">
               <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
@@ -737,7 +764,7 @@
             </ul>
           </div>
           <!-- /.footer__list footer__company -->
-          <div class="footer__list footer__still">
+        <!--   <div class="footer__list footer__still">
             <h3 class="footer__title">Еще..</h3>
             <ul class="footer__ul">
               <li class="footer__item"><a href="#" class="footer__link">Документация</a></li>
@@ -746,17 +773,18 @@
             </ul>
           </div>
           <!-- /.footer__list footer__still -->
-        </div>
+       <!--  </div>
         <!-- /.footer__wrapper -->
-        <div class="footer__copyright">
+      <!--   <div class="footer__copyright">
           <img src="./img/heart-footer.svg" alt="Footer icon" class="footer__copyright-icon" />
           <span class="footer__copyright-description">Copyright © 2019. Crafted with love.</span>
         </div>
         <!-- /.footer__copyright -->
-      </div>
+    <!--   </div>
       <!-- /.container footer__container -->
-    </footer>
+  <!--   </footer>
     <!-- /.footer -->
+  
 
     <div class="modal">
       <div class="modal__overlay"></div>
