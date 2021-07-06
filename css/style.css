@@ -500,6 +500,7 @@ template {
   color: #183B56;
   margin-top: -11px;
   margin-bottom: 28px;
+  white-space: nowrap;
 }
 
 .book__title-color {
@@ -1739,6 +1740,47 @@ template {
   .navbar__menu-nav {
     margin-right: auto;
   }
+  .book__description {
+    max-width: 455px;
+  }
+  .book__title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .book__subtitle {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 26px;
+  }
+  .book__annotation {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 36px;
+  }
+  .book__buttons {
+    max-width: 370px;
+  }
+  .book__button_buy {
+    padding: 18px 27px 18px 26px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .book__button_read {
+    padding: 17px 35px 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .book__image {
+    width: 400px;
+    height: 450px;
+    padding: 80px 90px 60px;
+  }
+  .book__img {
+    margin-left: 0;
+    width: 200px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1747,6 +1789,9 @@ template {
   }
   .logo {
     width: 88px;
+  }
+  .navbar {
+    padding: 27px 0 16px 0;
   }
   .navbar__menu {
     width: 408px;
@@ -1765,6 +1810,102 @@ template {
     padding: 11px 26px;
     font-size: 12px;
     line-height: 18px;
+  }
+  .main {
+    padding: 40px 0 40px 0;
+  }
+  .book {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .book__subtitle {
+    margin-bottom: 18px;
+  }
+  .book__annotation {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 26px;
+  }
+  .book__buttons {
+    width: 95%;
+  }
+  .book__button_buy {
+    padding: 16px 20px 16px 19px;
+    font-size: 12px;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .book__button_read {
+    padding: 16px 27px 15px;
+    font-size: 12px;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .book__image {
+    padding: 70px 60px 50px;
+  }
+}
+
+@media (max-width: 740px) {
+  .book__description {
+    max-width: 75%;
+  }
+  .book__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book__button_buy {
+    margin-bottom: 15px;
+  }
+  .book__img {
+    margin: auto;
+    width: 250px;
+    height: 350px;
+  }
+  .book__image {
+    height: 500px;
+    padding: 70px 60px 50px 70px;
+  }
+}
+
+@media (max-width: 711px) {
+  .book {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book__description {
+    max-width: 85%;
+  }
+  .book__title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .book__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .book__annotation {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  .book__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: 0 auto 36px;
+    width: 85%;
   }
 }
 
@@ -1809,12 +1950,6 @@ template {
     width: 22px;
     height: 2.2px;
     background-color: #3A4C66;
-  }
-}
-
-@media (max-width: 320px) {
-  .container {
-    max-width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
