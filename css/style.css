@@ -35,6 +35,10 @@ p {
   margin: 0;
 }
 
+.logo {
+  width: 98px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -378,11 +382,11 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   padding: 37px 0 26px 0;
 }
 
-.header__container {
+.navbar__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,7 +398,7 @@ template {
           align-items: center;
 }
 
-.header__menu {
+.navbar__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,7 +411,11 @@ template {
   width: 468px;
 }
 
-.header__menu-items {
+.navbar__menu-button {
+  display: none;
+}
+
+.navbar__menu-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,16 +428,16 @@ template {
   margin: 0;
 }
 
-.header__menu-link {
+.navbar__menu-link {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 22px;
   font-weight: 600;
   color: #183B56;
 }
 
-.header__button {
+.navbar__button {
   padding: 13px 30px;
   font-weight: bold;
   font-size: 16px;
@@ -443,12 +451,12 @@ template {
 }
 
 @media (min-width: 992px) {
-  .header__menu-link:hover {
+  .navbar__menu-link:hover {
     color: #1565D8;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .header__button:hover {
+  .navbar__button:hover {
     background-color: #1565D8;
     color: #FFFFFF;
     -webkit-transition: 0.3s;
@@ -1718,239 +1726,81 @@ template {
   margin-top: 15px;
 }
 
-@media (max-width: 1280px) {
-  .container {
-    width: 1069px;
-  }
-  .book__description {
-    max-width: 596px;
-  }
-  .book__image {
-    padding: 82px 70px 38px 70px;
-    width: 403px;
-    height: 506px;
-  }
-  .reference__recommendation {
-    max-width: 702px;
-  }
-  .reference__recommendation-button {
-    padding: 24px 262px 24px 262px;
-  }
-  .reference__block {
-    padding: 11px 13px 11px 10px;
-    max-width: 336px;
-    margin-bottom: 32px;
-  }
-  .reference__image {
-    width: 150px;
-    margin-right: 10px;
-  }
-  .reference__top-blocks {
-    padding: 24px 24px 0 22px;
-    width: 338px;
-  }
-  .reference__top-image {
-    margin-right: 10px;
-  }
-  .category__item {
-    width: 250px;
-    padding: 40px 0 50px 0;
-  }
-  .category__image {
-    width: 62px;
-    height: 62px;
-  }
-  .category__slider-container {
-    max-width: 1016px;
-  }
-  .unreleased__header {
-    width: 1016px;
-  }
-  .unreleased__image {
-    max-width: 180px;
-    height: 280px;
-  }
-  .unreleased__slider {
-    margin: 0;
-    max-width: 1016px;
-  }
-}
-
 @media (max-width: 1200px) {
   .container {
-    max-width: 990px;
-  }
-  .book__annotation {
-    max-width: 550px;
-  }
-  .reference__container {
-    max-width: 990px;
-  }
-  .reference__recommendation {
-    max-width: 650px;
-  }
-  .reference__recommendation-button {
-    padding: 23px 223px 22px 247px;
-    white-space: nowrap;
-  }
-  .reference__block {
-    width: 320px;
-    padding: 11px 18px 11px 11px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .reference__image {
-    width: 140px;
-    height: 200px;
-    margin-right: 10px;
-  }
-  .reference__top-blocks {
-    padding: 14px 10px 0 14px;
-    width: 320px;
-  }
-  .reference__name {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .category__slider-container {
-    width: 990px;
-  }
-  .unreleased__header {
-    width: 990px;
-  }
-  .newsletter__subscribe {
-    max-width: 417px;
-  }
-  .newsletter__container::before, .newsletter__container::after {
-    display: none;
-  }
-  .blog__image {
-    width: 456px;
-    height: 300px;
-  }
-  .blog__card-text {
-    margin-left: 0;
-  }
-  .blog__card-title {
-    margin-left: 0;
-  }
-  .blog__card_motivational {
-    margin-top: 0;
-  }
-  .blog__card-big {
-    margin-top: 0;
-  }
-  .blog__card-image {
-    margin-right: 26px;
+    max-width: 960px;
   }
 }
 
 @media (max-width: 992px) {
   .container {
-    max-width: 890px;
+    max-width: 760px;
   }
-  .main {
-    padding: 48px 0 40px 0;
-  }
-  .book__description {
-    max-width: 455px;
-  }
-  .book__title {
-    font-size: 32px;
-    line-height: 48px;
-    margin-bottom: 24px;
-  }
-  .book__subtitle {
-    font-size: 18px;
-    line-height: 32px;
-    margin-bottom: 26px;
-  }
-  .book__annotation {
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 36px;
-  }
-  .book__buttons {
-    max-width: 370px;
-  }
-  .book__button_buy {
-    padding: 18px 27px 18px 26px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .book__button_read {
-    padding: 17px 35px 16px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .book__image {
-    width: 400px;
-    height: 450px;
-    padding: 80px 100px 60px;
-  }
-  .book__img {
-    margin-left: 0;
-    width: 200px;
-    height: 300px;
-  }
-  .reference__image {
-    width: 160px;
-    height: 220px;
-    margin-right: 30px;
-  }
-  .reference__recommendation {
-    max-width: 550px;
-  }
-  .reference__recommendation-button {
-    padding: 23px 156px 22px 167px;
-  }
-  .reference__block {
-    min-width: 500px;
-    padding: 11px 100px 11px 100px;
-  }
-  .reference__block-fourth, .reference__block-fifth, .reference__block-sixth {
-    display: none;
-  }
-  .category__slider-container {
-    width: 820px;
-  }
-  .category__button--next {
-    left: 89%;
-  }
-  .category__item {
-    width: 200px;
-  }
-  .category__image {
-    width: 42px;
-    height: 42px;
-  }
-  .category__title {
-    font-size: 18px;
-  }
-  .unreleased__container {
-    max-width: 890px;
-  }
-  .unreleased__header {
-    max-width: 890px;
-  }
-  .author-story__video-item-third {
-    display: none;
-  }
-  .author-story__image-video {
-    width: 428px;
+  .navbar__menu-nav {
+    margin-right: auto;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 700px;
+    max-width: 576px;
   }
-  .book__image {
-    padding: 70px 60px 50px;
+  .logo {
+    width: 88px;
   }
-  .reference__recommendation-button {
-    padding: 23px 103px 22px 117px;
+  .navbar__menu {
+    width: 408px;
+  }
+  .navbar__menu-items {
+    width: 227px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .navbar__menu-link {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .navbar__button {
+    padding: 11px 26px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 77px;
+  }
+  .navbar {
+    padding: 20px 0;
+  }
+  .navbar__menu {
+    display: none;
+  }
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 22px;
+    height: 17.7px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    bottom: none;
+    background-color: #FFFFFF;
+  }
+  .menu-button__line {
+    width: 22px;
+    height: 2.2px;
+    background-color: #3A4C66;
   }
 }
 /*# sourceMappingURL=style.css.map */
