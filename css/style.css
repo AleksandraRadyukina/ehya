@@ -1743,7 +1743,7 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 85%;
   }
   .logo {
     width: 88px;
@@ -1778,12 +1778,20 @@ template {
   .navbar__menu {
     display: none;
   }
+  .navbar_mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 22px;
     height: 17.7px;
+    padding: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1794,13 +1802,19 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    bottom: none;
+    border: none;
     background-color: #FFFFFF;
   }
   .menu-button__line {
     width: 22px;
     height: 2.2px;
     background-color: #3A4C66;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
