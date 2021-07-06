@@ -1915,9 +1915,55 @@ template {
   }
   .navbar {
     padding: 20px 0;
+    background-color: #FFFFFF;
   }
   .navbar__menu {
     display: none;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 67px;
+    width: 100%;
+    height: 210px;
+    background-color: #183B56;
+    overflow-y: scroll;
+  }
+  .navbar__menu-nav {
+    padding: 15px 0 20px 0;
+  }
+  .navbar__menu-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .navbar__menu-item {
+    margin-bottom: 10px;
+  }
+  .navbar__menu-link {
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+  .navbar__button {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
   }
   .navbar_mobile_fixed {
     position: fixed;
@@ -1950,6 +1996,15 @@ template {
     width: 22px;
     height: 2.2px;
     background-color: #3A4C66;
+  }
+  .book {
+    padding: 87px 0 57px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar__menu--visible {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
