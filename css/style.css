@@ -1847,6 +1847,9 @@ template {
   .author-story__image-video {
     width: 100%;
   }
+  .partners-wrapper {
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1954,6 +1957,29 @@ template {
   .author-story__text {
     text-align: center;
     max-width: 85%;
+  }
+  .partners-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 185px;
+  }
+  .partners-logos {
+    width: 44%;
+    height: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .partners-logos-second {
+    display: none;
+  }
+  .partners__logo {
+    width: 110px;
+    height: 33px;
   }
 }
 
@@ -2082,6 +2108,9 @@ template {
   .author-story__image-video {
     width: 99%;
   }
+  .partners-logos {
+    width: 52%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2188,6 +2217,25 @@ template {
   .author-story__image-video {
     width: 99%;
   }
+  .partners-logos {
+    width: 67%;
+  }
+}
+
+@media (max-width: 432px) {
+  .partners {
+    padding: 37px 0 61px;
+  }
+  .partners__title {
+    margin-bottom: 30px;
+  }
+  .partners-logos {
+    width: 70%;
+  }
+  .partners__logo {
+    width: 86px;
+    height: 29px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2199,6 +2247,9 @@ template {
   .book__img {
     width: 144px;
     height: 215px;
+  }
+  .partners-logos {
+    width: 88%;
   }
 }
 
