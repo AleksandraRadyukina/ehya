@@ -1,6 +1,29 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .reference
+    &__container
+      max-width: 990px
+    &__recommendation
+      max-width: 650px
+      &-button
+        padding: 23px 223px 22px 247px
+        white-space: nowrap
+    &__block
+      width: 320px
+      padding: 11px 18px 11px 11px
+      align-items: center
+    &__image
+      width: 140px
+      height: 200px
+      margin-right: 10px
+    &__top
+      &-blocks
+        padding: 14px 10px 0 14px
+        width: 320px
+    &__name
+      font-size: 18px
+      line-height: 30px
 
 @media (max-width: 992px)
   .container
@@ -10,7 +33,6 @@
       margin-right: auto
   .book
     &__description
-      max-width: 455px
     &__title
       font-size: 32px
       line-height: 48px
@@ -42,6 +64,26 @@
       margin-left: 0
       width: 200px
       height: 300px 
+  .reference
+    &__image
+      width: 160px
+      height: 220px
+      margin-right: 30px
+    &__recommendation
+      display: flex
+      flex-direction: column
+      max-width: 50%
+      &-button
+        padding: 23px 100px 22px 105px
+        min-width: 50%
+    &__block
+      flex-basis: 100%
+      &-fourth,
+      &-fifth,
+      &-sixth
+        display: none
+    &__top
+      flex-basis: 45%
 
 @media (max-width: 768px)
   .container
@@ -87,29 +129,33 @@
         flex-basis: 45%
     &__image
       padding: 70px 60px 50px
+  .reference
+    padding: 29px 0 49px
+    &__recommendation
+      max-width: 47%
+      &-button
+        margin-top: 1px
+        padding: 23px 75px 23px 75px
+        min-width: 100%
+    &__image
+      margin-right: 10px
+      width: 135px
+      height: 210px
+    &__block
+      padding: 11px 11px 11px 11px
+      margin-bottom: 20px
+      &-info
+        padding-top: 0
+      &-button
+        margin-right: 12px
+    &__top
+      &-block
+        margin-bottom: 30px
 
 @media (max-width: 740px)
   .book
-    &__description 
-      max-width: 75%
-    &__buttons
-      flex-direction: column
-    &__button
-      &_buy
-        margin-bottom: 15px
-    &__img
-      margin: auto
-      width: 250px
-      height: 350px
-    &__image
-      height: 500px
-      padding: 70px 60px 50px 70px
-
-@media (max-width: 711px)
-  .book
     flex-direction: column
     &__description 
-      max-width: 85%
     &__title
       font-size: 32px
       line-height: 40px
@@ -130,6 +176,38 @@
       text-align: center
       margin: 0 auto 36px
       width: 85%
+    &__button
+      &_buy
+        margin-bottom: 15px
+    &__img
+      width: 67%
+      height: 94%
+    &__image
+      height: auto
+      padding: 70px 0px 67px 132px
+      width: 90%
+  .reference
+    &__container
+      flex-direction: column
+      align-items: center
+    &__recommendation
+      text-align: center
+      max-width: 87%
+    &__block
+      flex-direction: column
+      &-second,
+      &-third
+        display: none
+      &_br
+        display: none
+    &__image
+      margin-top: -44px
+    &__top
+      text-align: center
+
+
+
+
   
 
 @media (max-width: 576px)
@@ -167,8 +245,7 @@
       display: flex
       align-items: center
       color: $light
-      border: 2px solid $light
-      
+      border: 2px solid $light      
     &_mobile
       &_fixed
         position: fixed
@@ -193,6 +270,23 @@
         background-color: #3A4C66
   .book
     padding: 87px 0 57px 0
+    &__buttons
+      width: 65%
+    &__img
+      width: 84%
+      margin: auto
+    &__image
+      padding: 70px 0px 67px 55px
+
+@media (max-width: 320px)
+  .book
+    &__image
+      padding: 60px 0px 60px 66px
+      height: 333px
+      width: 280px
+    &__img
+      width: 144px
+      height: 215px
 
 
 @media (max-width: 576px)

@@ -65,6 +65,8 @@ function closeModal(event) {
 }
 
 $(".form").each(function() {
+  $(".modal__phone").mask("+7 (000) 000-0000");
+  $(".footer__input-phone").mask("+7 (000) 000-0000");
   $(this).validate({
     errorClass: "invalid",
     messages: {
@@ -83,5 +85,4 @@ $(".form").each(function() {
       },
     });
 })
-$(".modal__phone").mask("+7 (000) 000-0000");
-$(".footer__input-phone").mask("+7 (000) 000-0000");
+
