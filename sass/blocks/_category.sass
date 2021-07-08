@@ -12,7 +12,6 @@
       display: flex
       justify-content: space-between
       position: relative
-      width: 1150px
       height: 301px
       overflow: hidden
   &__item
@@ -35,17 +34,28 @@
     height: 56px
     filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
     padding: 0
+    &--prev
+      top: 30%
+      right: 98%
+      &-icon
+        width: 14px
+        height: 16px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: rotate(180deg) translate(50%, 50%)
+        fill: $primary-color
     &--next
       top: 30%
       left: 98%
-    &-icon
-      width: 14px
-      height: 16px
-      position: absolute
-      top: 50%
-      left: 50%
-      transform: translate(-50%, -50%)
-      fill: $primary-color
+      &-icon
+        width: 14px
+        height: 16px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        fill: $primary-color
   &__image
     width: 64px
     height: 64px
@@ -66,4 +76,5 @@
 .swiper-wrapper
   display: flex
   justify-content: space-between
+  
   
