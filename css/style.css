@@ -1790,6 +1790,16 @@ template {
     font-size: 18px;
     line-height: 30px;
   }
+  .blog__card-big {
+    max-width: 466px;
+  }
+  .blog__card-image {
+    width: 183px;
+    margin-right: 20px;
+  }
+  .blog__image {
+    width: 466px;
+  }
   .newsletter__container::before {
     bottom: 11%;
     left: -60%;
@@ -1928,14 +1938,15 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    max-width: 100%;
+  }
+  .blog__card-big .blog__card-title {
+    text-align: center;
+    max-width: 100%;
   }
   .blog__card-title {
     white-space: nowrap;
     max-width: 231px;
-  }
-  .blog__card-title-big {
-    text-align: center;
   }
   .blog__card-text {
     text-align: center;
