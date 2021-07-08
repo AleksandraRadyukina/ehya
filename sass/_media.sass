@@ -406,6 +406,9 @@
       &::after
         top: 63%
         right: -111%
+  .blog
+    &__card
+      justify-self: start
   .footer
     &__container
       max-width: 100%
@@ -419,7 +422,11 @@
       margin-left: 0
 
 
-
+@media (max-width: 635px)
+  .blog
+    &__card
+      &-image
+        width: 41%
 
   
 
@@ -500,6 +507,32 @@
   .partners
     &-logos 
       width: 67%
+  .blog
+    &__image
+      height: 300px
+      margin-bottom: 20px
+    &__card
+      &-big
+        .blog
+          &__card
+            &-title
+              text-align: left
+              margin-left: 0
+      &-title
+        font-size: 16px
+        line-height: 24px
+      &-text
+        text-align: left
+        font-size: 12px
+        line-height: 24px
+        margin-left: 0
+      &-title
+        font-size: 18px
+        line-height: 26px
+        margin-bottom: 10px
+        margin-left: 0
+      &_motivational
+        margin-top: 0
   .footer
     padding-top: 48px
     padding-bottom: 64px
@@ -536,6 +569,25 @@
     &__logo
       width: 86px
       height: 29px
+  .blog
+    &__image
+      height: 150px
+    &__card
+      &-big
+        .blog
+          &__card
+            &-title
+              font-size: 16px
+              line-height: 20px
+      &-title
+        font-size: 14px
+        line-height: 20px
+      &-image
+        height: 90px
+      &-date
+        font-size: 10px
+        line-height: 20px
+        margin-bottom: 10px
   .footer
     &__container
       max-width: 100%

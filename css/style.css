@@ -2320,6 +2320,10 @@ template {
     top: 63%;
     right: -111%;
   }
+  .blog__card {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
   .footer__container {
     max-width: 100%;
   }
@@ -2336,6 +2340,12 @@ template {
   }
   .footer__still {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 635px) {
+  .blog__card-image {
+    width: 41%;
   }
 }
 
@@ -2446,6 +2456,33 @@ template {
   .partners-logos {
     width: 67%;
   }
+  .blog__image {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .blog__card-big .blog__card-title {
+    text-align: left;
+    margin-left: 0;
+  }
+  .blog__card-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .blog__card-text {
+    text-align: left;
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 0;
+  }
+  .blog__card-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  .blog__card_motivational {
+    margin-top: 0;
+  }
   .footer {
     padding-top: 48px;
     padding-bottom: 64px;
@@ -2492,6 +2529,25 @@ template {
   .partners__logo {
     width: 86px;
     height: 29px;
+  }
+  .blog__image {
+    height: 150px;
+  }
+  .blog__card-big .blog__card-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .blog__card-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .blog__card-image {
+    height: 90px;
+  }
+  .blog__card-date {
+    font-size: 10px;
+    line-height: 20px;
+    margin-bottom: 10px;
   }
   .footer__container {
     max-width: 100%;
