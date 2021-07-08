@@ -15,11 +15,11 @@ const swiper = new Swiper(".category__slider-container",  {
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 25
     },
     576: {
       slidesPerView: 2,
-      spaceBetween: 40
+      spaceBetween: 30
     },
     768: {
       slidesPerView: 2,
@@ -62,7 +62,10 @@ const unreleasedSlider = new Swiper(".unreleased__slider", {
     576: {
       slidesPerView: 2,
       spaceBetween: 40
-    }
+    },
+    320: {
+      slidesPerView: 1
+    },
   }
 });
 
