@@ -1850,6 +1850,71 @@ template {
   .partners-wrapper {
     margin: 0;
   }
+  .blog__container {
+    justify-items: center;
+    -ms-grid-columns: (minmax(min-content, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(-webkit-min-content, 1fr));
+        grid-template-columns: repeat(1, minmax(min-content, 1fr));
+  }
+  .blog__title {
+    text-align: center;
+  }
+  .blog__button {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .blog__image {
+    width: 100%;
+  }
+  .blog__card-big {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .blog__card-title {
+    white-space: nowrap;
+  }
+  .blog__card-title-big {
+    text-align: center;
+  }
+  .blog__card-text {
+    text-align: center;
+    max-width: 100%;
+  }
+  .blog__card_motivational {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .blog__card_learn {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .blog__card_motivation {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
+  .blog__card-image {
+    width: 72%;
+  }
 }
 
 @media (max-width: 768px) {
