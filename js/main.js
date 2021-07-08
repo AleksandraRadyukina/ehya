@@ -12,9 +12,21 @@ const swiper = new Swiper(".category__slider-container", {
   spaceBetween: 30,
   slideClass: "category-slide",
   breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 25
+    },
     992: {
       slidesPerView: 3,
-      spaceBetween: 25
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 40
     }
   }
 });
@@ -30,9 +42,21 @@ const unreleasedSlider = new Swiper(".unreleased__slider", {
     prevEl: ".unreleased__button-prev",
   },
   breakpoints: {
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 25
+    },
     992: {
       slidesPerView: 4,
-      spaceBetween: 25
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 40
     }
   }
 });
