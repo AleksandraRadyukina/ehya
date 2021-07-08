@@ -107,6 +107,18 @@
         display: none
     &__top
       flex-basis: 45%
+  .category
+    &__slider
+      &-container
+        &--hidden
+         display: flex
+    &__button
+      &--prev
+        top: 93%
+        right: 57%
+      &--next
+        top: 93%
+        left: 57%
   .author-story
     &__video
       &-item
@@ -358,6 +370,7 @@
         display: none
       &-button
         margin-right: 20px
+      
     &__image
       margin-top: -44px
       margin-bottom: 13px
@@ -377,10 +390,19 @@
     &__top
       width: 87%
       &-blocks
+        display: flex
+        flex-direction: column
+        justify-content: center
         width: 100%
         padding: 26px 10px 0 14px
       &-block
         justify-content: center
+        max-width: 513px
+        .top-info
+          min-width: 170px
+      &-hr
+        min-width: 100%
+
   .author-story
     &__video
       &-main
@@ -489,7 +511,7 @@
         height: 2.2px
         background-color: #3A4C66
   .book
-    padding: 87px 0 57px 0
+    padding: 87px 0 40px 0
     &__buttons
       width: 65%
     &__img
@@ -560,6 +582,41 @@
       display: none
 
 @media (max-width: 432px)
+  .reference
+    padding: 16px 0 49px
+    &__recommendation
+      max-width: 95%
+      &-button
+        max-width: 100%
+        padding: 23px 32px 23px 32px
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__image
+      width: 96px
+      height: 147px
+    &__name
+      font-size: 20px
+      line-height: 24px
+    &__book
+      &-category
+        font-size: 14px
+        line-height: 20px
+    &__price
+      font-size: 16px
+      line-height: 20px
+    &__block
+      &-button
+        padding: 7px 27px
+        max-width: 115px
+    &__top
+      width: 100%
+      &-blocks
+        width: 110%
+      &-image
+        width: 96.33px
+        height: 145.5px
+        margin-right: 14px
   .partners
     padding: 37px 0 61px
     &__title

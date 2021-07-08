@@ -862,6 +862,10 @@ template {
   overflow: hidden;
 }
 
+.category__slider-container--hidden {
+  display: none;
+}
+
 .category__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1894,6 +1898,19 @@ template {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
   }
+  .category__slider-container--hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .category__button--prev {
+    top: 93%;
+    right: 57%;
+  }
+  .category__button--next {
+    top: 93%;
+    left: 57%;
+  }
   .author-story__video-item {
     width: 47%;
   }
@@ -2287,6 +2304,16 @@ template {
     width: 87%;
   }
   .reference__top-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     padding: 26px 10px 0 14px;
   }
@@ -2294,6 +2321,13 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 513px;
+  }
+  .reference__top-block .top-info {
+    min-width: 170px;
+  }
+  .reference__top-hr {
+    min-width: 100%;
   }
   .author-story__video-main {
     height: 321px;
@@ -2438,7 +2472,7 @@ template {
     background-color: #3A4C66;
   }
   .book {
-    padding: 87px 0 57px 0;
+    padding: 87px 0 40px 0;
   }
   .book__buttons {
     width: 65%;
@@ -2517,6 +2551,51 @@ template {
 }
 
 @media (max-width: 432px) {
+  .reference {
+    padding: 16px 0 49px;
+  }
+  .reference__recommendation {
+    max-width: 95%;
+  }
+  .reference__recommendation-button {
+    max-width: 100%;
+    padding: 23px 32px 23px 32px;
+  }
+  .reference__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .reference__image {
+    width: 96px;
+    height: 147px;
+  }
+  .reference__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .reference__book-category {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .reference__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .reference__block-button {
+    padding: 7px 27px;
+    max-width: 115px;
+  }
+  .reference__top {
+    width: 100%;
+  }
+  .reference__top-blocks {
+    width: 110%;
+  }
+  .reference__top-image {
+    width: 96.33px;
+    height: 145.5px;
+    margin-right: 14px;
+  }
   .partners {
     padding: 37px 0 61px;
   }

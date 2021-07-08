@@ -1,4 +1,4 @@
-const swiper = new Swiper(".category__slider-container", {
+const swiper = new Swiper(".category__slider-container",  {
   // Optional parameters
   loop: true,
   keyboard: {
@@ -7,11 +7,16 @@ const swiper = new Swiper(".category__slider-container", {
   // Navigation arrows
   navigation: {
     nextEl: ".category__button--next",
+    prevEl: ".category__button--prev",
   },
   slidesPerView: 4,
   spaceBetween: 30,
   slideClass: "category-slide",
   breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
     576: {
       slidesPerView: 2,
       spaceBetween: 40
