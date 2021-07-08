@@ -175,6 +175,19 @@
       padding: 8px 9px
     &__icon
       margin-left: 6px
+  .footer
+    &__wrapper
+      width: 100%
+      flex-wrap: wrap
+    &__social
+      align-self: flex-end
+      order: 1
+      align-items: center
+      width: 100%
+    &__text
+      text-align: center
+    &__product 
+      margin-left: 0
 
 @media (max-width: 768px)
   .container
@@ -279,6 +292,13 @@
     &__subscribe
       display: flex
       flex-direction: column
+  .footer
+    &__services
+      margin-left: 58px
+    &__company
+      margin-left: 58px
+    &__still
+      margin-left: 58px
   
 
 
@@ -386,6 +406,17 @@
       &::after
         top: 63%
         right: -111%
+  .footer
+    &__container
+      max-width: 100%
+    &__wrapper
+      justify-content: space-evenly
+    &__services
+      margin-left: 0
+    &__company
+      margin-left: 0
+    &__still
+      margin-left: 0
 
 
 
@@ -469,6 +500,31 @@
   .partners
     &-logos 
       width: 67%
+  .footer
+    padding-top: 48px
+    padding-bottom: 64px
+    &__container
+      max-width: 85%
+    &__wrapper
+      margin-bottom: 0
+    &__list
+      flex-basis: 35%
+    &__product,
+    &__services,
+    &__company,
+    &__still
+      margin-left: 30px
+      margin-bottom: 15px
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__link
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 15px
+    &__copyright
+      display: none
 
 @media (max-width: 432px)
   .partners
@@ -480,6 +536,9 @@
     &__logo
       width: 86px
       height: 29px
+  .footer
+    &__container
+      max-width: 100%
 
 @media (max-width: 320px)
   .book

@@ -1993,6 +1993,28 @@ template {
   .newsletter__icon {
     margin-left: 6px;
   }
+  .footer__wrapper {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__social {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .footer__text {
+    text-align: center;
+  }
+  .footer__product {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2147,6 +2169,15 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer__services {
+    margin-left: 58px;
+  }
+  .footer__company {
+    margin-left: 58px;
+  }
+  .footer__still {
+    margin-left: 58px;
+  }
 }
 
 @media (max-width: 740px) {
@@ -2289,6 +2320,23 @@ template {
     top: 63%;
     right: -111%;
   }
+  .footer__container {
+    max-width: 100%;
+  }
+  .footer__wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer__services {
+    margin-left: 0;
+  }
+  .footer__company {
+    margin-left: 0;
+  }
+  .footer__still {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2398,6 +2446,37 @@ template {
   .partners-logos {
     width: 67%;
   }
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .footer__container {
+    max-width: 85%;
+  }
+  .footer__wrapper {
+    margin-bottom: 0;
+  }
+  .footer__list {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+  }
+  .footer__product, .footer__services, .footer__company, .footer__still {
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+  .footer__title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .footer__link {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .footer__copyright {
+    display: none;
+  }
 }
 
 @media (max-width: 432px) {
@@ -2413,6 +2492,9 @@ template {
   .partners__logo {
     width: 86px;
     height: 29px;
+  }
+  .footer__container {
+    max-width: 100%;
   }
 }
 
